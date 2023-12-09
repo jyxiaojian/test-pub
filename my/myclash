@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-30 12:08:15
+# 创建时间：2023-12-09 13:20:32
 # 使用模版：V2RaySE 默认模版
-# 节点数量：197
+# 节点数量：80
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -11,1428 +11,673 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"_CN_中国->🇺🇸_US_美国_1","type":"vmess","server":"111.23.252.215","port":45070,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"_CN_中国->🇺🇸_US_美国_2","type":"vmess","server":"111.23.252.215","port":48767,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"_CN_中国->🇺🇸_US_美国_3","type":"vmess","server":"120.240.163.62","port":59629,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"_RO_罗马尼亚->🇺🇸_US_美国","type":"vmess","server":"mtn.ircf.space","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/dp2.scproxy.top/shirker","headers":{"host":"irancelll.appsandhack2.tech"}}}
-  - {"name":"1162","type":"vmess","server":"156.245.8.96","port":42980,"cipher":"auto","uuid":"bd249e37-7359-41ee-84a7-09e49e0ec5c4","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"121","type":"vmess","server":"198.16.45.163","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.80212492.xyz"}}}
-  - {"name":"422","type":"vmess","server":"156.225.67.102","port":44331,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"678","type":"vmess","server":"156.225.67.211","port":54494,"cipher":"auto","uuid":"3ca912da-6ac2-418f-b9cf-45b6f694579b","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_140","type":"trojan","server":"hn.xiaohouzi.club","port":18735,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"ajpn05.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_180","type":"trojan","server":"hnm.xiaohouzi.club","port":27094,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"siga01.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_189","type":"trojan","server":"hnm.xiaohouzi.club","port":18634,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"hnm.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_192","type":"trojan","server":"hn.xiaohouzi.club","port":18581,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"hn.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_199","type":"trojan","server":"hn.xiaohouzi.club","port":19024,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"hn.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_215","type":"trojan","server":"hnm.xiaohouzi.club","port":36872,"udp":true,"password":"a3278882-3614-39cf-a3d6-faefa8c910ab","sni":"freeus.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"CN_youtube@资源分享师_247","type":"vmess","server":"ingress-i2.iivvppnn.info","port":38102,"cipher":"auto","uuid":"79386685-16da-327c-9e14-aa6d702d86bc","alterId":1,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"YTB-AWKJ"}}}
-  - {"name":"CN香港(yudou66.com 玉豆免费节点)","type":"vmess","server":"111.23.252.215","port":34214,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"US_youtube@资源分享师_118","type":"vmess","server":"vde2.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/chat"}}
-  - {"name":"US_youtube@资源分享师_147","type":"vless","server":"172.67.207.214","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_151","type":"vless","server":"172.67.158.47","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_157","type":"vless","server":"172.67.219.194","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_167","type":"vmess","server":"woiden.739256.xyz","port":443,"cipher":"auto","uuid":"d05d144a-71a9-4720-8c4e-565257953069","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"woiden.739256.xyz"}}}
-  - {"name":"US_youtube@资源分享师_176","type":"vless","server":"172.67.47.57","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_196","type":"vless","server":"172.67.129.66","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_25","type":"vmess","server":"172.67.201.204","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"US_youtube@资源分享师_43","type":"vmess","server":"frgt1.ssr-free2.xyz","port":443,"cipher":"auto","uuid":"9379fea0-006d-4fd3-8e35-d45a5af72aa2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/UMW36262","headers":{"host":"frgt1.ssr-free2.xyz"}}}
-  - {"name":"US_youtube@资源分享师_56","type":"vless","server":"172.67.117.135","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"US_youtube@资源分享师_57","type":"vless","server":"172.67.142.242","port":443,"uuid":"146edc71-e452-4553-ec30-8c7a5b5c8d9b","tls":true,"servername":"abc.vpneee.top","network":"ws","ws-opts":{"path":"/vpneee","headers":{"host":"abc.vpneee.top"}}}
-  - {"name":"🇺🇸US美国(youtube阿伟科技)","type":"vmess","server":"lv1.sharecentrepro.org","port":443,"cipher":"none","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_1","type":"vmess","server":"quran-audio4.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quran-audio4.xyz"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_2","type":"vmess","server":"cf-topspeed.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeed.uk"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_3","type":"vmess","server":"holyquran10.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran10.store"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_4","type":"vmess","server":"ny1.sharecentrepro.org","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker"}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_5","type":"vmess","server":"104.21.59.192","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran10.store"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_6","type":"vmess","server":"vde2.0bad.com","port":443,"cipher":"auto","uuid":"927094d3-d678-4763-8591-e240d0bcae87","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/chat","headers":{"host":"vde2.0bad.com"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_7","type":"vmess","server":"lv2.sharecentrepro.org","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_8","type":"vmess","server":"cf-topspeedvv2.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedvv2.uk"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_9","type":"vmess","server":"104.21.53.66","port":443,"cipher":"auto","uuid":"d05d144a-71a9-4720-8c4e-565257953069","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"woiden.739256.xyz"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_10","type":"vmess","server":"lv2.sharecentrepro.org","port":443,"cipher":"none","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv2.sharecentrepro.org"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_11","type":"vmess","server":"104.21.86.52","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedone.uk"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_12","type":"vmess","server":"holyquran11.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran11.store"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_13","type":"vmess","server":"holyquran19.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_14","type":"vmess","server":"cf-topspeedone.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_15","type":"vmess","server":"172.67.132.167","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran11.store"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_16","type":"vmess","server":"quranweb4.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_17","type":"vmess","server":"172.67.194.139","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedoneplus.uk"}}}
-  - {"name":"🇺🇸美国【YouTube-由零開始】_18","type":"vmess","server":"172.67.73.39","port":80,"cipher":"auto","uuid":"b8458948-a630-4e6d-809a-230b2223ff3d","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/xrayvws","headers":{"host":"f.tun4.live"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_1","type":"vmess","server":"cf-topspeed.uk","port":443,"cipher":"none","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeed.uk"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_2","type":"vmess","server":"freequranbook.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"freequranbook.uk"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_3","type":"vmess","server":"quran-audio2.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quran-audio2.xyz"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_4","type":"vmess","server":"quran-audio.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quran-audio.xyz"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_5","type":"vmess","server":"quranweb24.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb24.xyz"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_6","type":"vmess","server":"holyquran10.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_7","type":"vmess","server":"quran-audio7.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quran-audio7.xyz"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_8","type":"vmess","server":"cf-topspeedv5.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedv5.uk"}}}
-  - {"name":"德国(yudou66.com 玉豆免费节点)_9","type":"vmess","server":"cf-topspeedvv3.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedvv3.uk"}}}
-  - {"name":"德国【YouTube-由零開始】","type":"vmess","server":"freequranbook.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"俄罗斯(yudou66.com 玉豆免费节点)","type":"trojan","server":"1.hk1997.pro","port":443,"udp":true,"password":"3e1890e7-4746-4378-89ba-10c7bbe06094","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"芬兰(yudou66.com 玉豆免费节点)","type":"vmess","server":"japan.com","port":443,"cipher":"auto","uuid":"5775d530-ab7a-455f-d841-82bdca57b9b2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu6.739256.xyz"}}}
-  - {"name":"韩国(yudou66.com 玉豆免费节点)","type":"vless","server":"v2ray2.v2rayfree2.xyz","port":443,"uuid":"3d943a51-a315-4b9d-8f13-6cd3a9adaf6a","tls":true,"network":"ws","ws-opts":{"path":"/ray"}}
-  - {"name":"科技网络_1","type":"vmess","server":"38.48.185.103","port":47272,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_2","type":"vmess","server":"142.4.97.71","port":44942,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_3","type":"vmess","server":"38.54.250.51","port":51431,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_4","type":"vmess","server":"108.186.5.8","port":59010,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_5","type":"vmess","server":"198.2.208.179","port":35402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_6","type":"vmess","server":"198.2.203.145","port":50002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_7","type":"vmess","server":"38.53.92.186","port":33002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_8","type":"vmess","server":"142.4.112.10","port":51091,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_9","type":"vmess","server":"64.32.20.34","port":54042,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_10","type":"vmess","server":"107.167.29.87","port":44586,"cipher":"auto","uuid":"465dec1a-e09b-4bb6-9905-70f75d6035c8","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_11","type":"vmess","server":"64.32.20.91","port":45809,"cipher":"auto","uuid":"c1bad9a6-1482-4941-a0c4-e85f3cbbcb5a","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_12","type":"vmess","server":"107.148.195.15","port":50014,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_13","type":"vmess","server":"156.245.8.50","port":54779,"cipher":"auto","uuid":"fe5f69e7-e183-439b-950b-9661ef0651f2","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_14","type":"vmess","server":"107.167.7.12","port":41654,"cipher":"auto","uuid":"bdee202c-8fae-441f-a588-7bc4d3887019","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_15","type":"vmess","server":"198.2.198.11","port":42288,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_16","type":"vmess","server":"156.225.67.112","port":58350,"cipher":"auto","uuid":"b8df3ef1-887f-4ee4-855f-4f80416c2464","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_17","type":"vmess","server":"156.225.67.73","port":41008,"cipher":"auto","uuid":"21155efd-8e29-43d2-95bc-fe3190ecb1c6","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_18","type":"vmess","server":"171.22.134.28","port":53412,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_19","type":"vmess","server":"142.4.126.54","port":33302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_20","type":"vmess","server":"156.225.67.183","port":55953,"cipher":"auto","uuid":"11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_21","type":"vmess","server":"198.2.201.11","port":50042,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_22","type":"vmess","server":"142.4.118.247","port":57402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_23","type":"vmess","server":"156.225.67.210","port":43549,"cipher":"auto","uuid":"6fa560d4-35c5-4968-adfc-812c52878b84","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_24","type":"vmess","server":"156.249.18.175","port":42542,"cipher":"auto","uuid":"f5250c4e-f855-4eff-b73c-a02226d42fe7","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_25","type":"vmess","server":"198.2.196.211","port":58202,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_26","type":"vmess","server":"107.167.4.122","port":46766,"cipher":"auto","uuid":"9838c1b4-c3fd-49b5-8a59-2ff05385f17c","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_27","type":"vmess","server":"156.225.67.108","port":45208,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_28","type":"vmess","server":"64.32.21.241","port":44313,"cipher":"auto","uuid":"57f93e92-ebb9-4f16-9bdc-8225d2010995","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_29","type":"vmess","server":"156.245.8.233","port":44659,"cipher":"auto","uuid":"65ea6727-4461-47a7-a5c4-fef2c67f2f79","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_30","type":"vmess","server":"154.84.1.80","port":42902,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_31","type":"vmess","server":"156.225.67.195","port":48519,"cipher":"auto","uuid":"5a4d69ad-20a9-4941-b223-87bbd09f5f52","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_32","type":"vmess","server":"156.225.67.146","port":51948,"cipher":"auto","uuid":"93503dd5-245a-4eb1-ae2a-57ab9f2b3c29","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_33","type":"vmess","server":"45.131.229.56","port":41602,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_34","type":"vmess","server":"156.225.67.151","port":47160,"cipher":"auto","uuid":"a7fa8f14-4fb6-4280-9005-d6bbe99c5da9","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_35","type":"vmess","server":"156.249.18.247","port":47652,"cipher":"auto","uuid":"1d474f0b-e78d-4af9-bc4a-a467467bc7a7","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_36","type":"vmess","server":"45.86.11.198","port":44101,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_37","type":"vmess","server":"156.225.67.226","port":35362,"cipher":"auto","uuid":"6e79eea4-5f72-4683-ad0e-5339f013421b","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_38","type":"vmess","server":"192.74.242.138","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_39","type":"vmess","server":"156.225.67.205","port":48717,"cipher":"auto","uuid":"d7735058-1dac-4618-99ff-0aa0441ec2d7","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_40","type":"vmess","server":"38.63.19.65","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.60321304.xyz"}}}
-  - {"name":"科技网络_41","type":"vmess","server":"140.99.59.252","port":51712,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_42","type":"vmess","server":"156.225.67.236","port":35939,"cipher":"auto","uuid":"4ec0ae62-de09-4029-904a-0313d4628ecf","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_43","type":"vmess","server":"142.4.101.19","port":50222,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_44","type":"vmess","server":"156.225.67.253","port":53895,"cipher":"auto","uuid":"d3133484-f2bf-4b0c-8d38-f8e645b65687","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_45","type":"vmess","server":"154.84.1.84","port":54492,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_46","type":"vmess","server":"156.225.67.240","port":38138,"cipher":"auto","uuid":"9c026efe-6af0-465f-b8c0-3f58c8c2d4c5","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_47","type":"vmess","server":"156.245.8.26","port":42076,"cipher":"auto","uuid":"f9fa3a9c-f7d5-414f-88e6-6970585d9949","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_48","type":"vmess","server":"38.40.219.183","port":50462,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_49","type":"vmess","server":"156.225.67.254","port":46124,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_50","type":"vmess","server":"142.4.108.22","port":55102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_51","type":"vmess","server":"156.225.67.39","port":36183,"cipher":"auto","uuid":"de491802-233e-47f2-8c6c-d19bcf5bd56b","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_52","type":"vmess","server":"45.58.186.75","port":55940,"cipher":"auto","uuid":"4a138e19-0595-4d51-83c6-fd276cf7d307","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_53","type":"vmess","server":"192.74.248.40","port":53707,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_54","type":"vmess","server":"192.74.246.56","port":50032,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_55","type":"vmess","server":"156.225.67.168","port":42818,"cipher":"auto","uuid":"ebec2adf-e940-446f-bed4-d8c91143b54a","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_56","type":"vmess","server":"142.4.99.68","port":41169,"cipher":"auto","uuid":"b65da4af-a12a-4a59-9316-4549e12ba62c","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_57","type":"vmess","server":"38.63.0.83","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.19458162.xyz"}}}
-  - {"name":"科技网络_58","type":"vmess","server":"192.74.231.118","port":50004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_59","type":"vmess","server":"67.21.89.136","port":46866,"cipher":"auto","uuid":"b697d727-cf6c-41dd-a0de-c7a9478e4a4a","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_60","type":"vmess","server":"45.86.11.146","port":49182,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_61","type":"vmess","server":"45.83.130.173","port":58882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_62","type":"vmess","server":"156.225.67.126","port":42913,"cipher":"auto","uuid":"3a3c8a9c-334e-4360-adb8-a80a57ddcbbf","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_63","type":"vmess","server":"142.0.131.166","port":45423,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_64","type":"vmess","server":"140.99.120.182","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.79204387.xyz"}}}
-  - {"name":"科技网络_65","type":"vmess","server":"137.175.63.133","port":50009,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_66","type":"vmess","server":"198.2.194.58","port":49988,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_67","type":"vmess","server":"142.0.135.50","port":53399,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_68","type":"vmess","server":"142.4.108.172","port":49890,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_69","type":"vmess","server":"137.175.15.195","port":43087,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_70","type":"vmess","server":"142.4.119.202","port":53986,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_71","type":"vmess","server":"198.16.45.164","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.80212492.xyz"}}}
-  - {"name":"科技网络_72","type":"vmess","server":"142.4.114.20","port":34002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_73","type":"vmess","server":"142.4.110.25","port":44902,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_74","type":"vmess","server":"51.195.35.151","port":58802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_75","type":"vmess","server":"142.4.127.29","port":50013,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_76","type":"vmess","server":"108.186.116.172","port":55005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_77","type":"vmess","server":"74.217.179.187","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/120306182525","headers":{"host":"www.39960822.xyz"}}}
-  - {"name":"科技网络_78","type":"vmess","server":"192.74.234.248","port":50044,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_79","type":"vmess","server":"192.74.232.246","port":50802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"科技网络_80","type":"vmess","server":"192.74.241.44","port":31212,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_1","type":"vmess","server":"172.67.222.57","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb22.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_2","type":"vmess","server":"lv1.sharecentrepro.org","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv1.sharecentrepro.org"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_3","type":"vmess","server":"quranweb22.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb22.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_4","type":"vmess","server":"holyquran18.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran18.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_5","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"pl.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_6","type":"vmess","server":"holyquran4.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran4.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_7","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"ovh.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_8","type":"vmess","server":"holyquran18.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_9","type":"vmess","server":"holyquran11.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_10","type":"vmess","server":"holyquran1.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran1.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_11","type":"vmess","server":"holyquran8.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran8.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_12","type":"vmess","server":"project.mytargoocloud.live","port":443,"cipher":"auto","uuid":"d7c91c45-8f30-4175-b78b-c18ccf6a1fa5","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sgm1.targoocloud.live"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_13","type":"vmess","server":"quranweb7.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb7.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_14","type":"vmess","server":"quranweb12.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb12.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_15","type":"vmess","server":"cf-lt.sharecentre.online","port":2095,"cipher":"auto","uuid":"fc9bd698-6e37-4330-f691-a3334f70b1d3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/live","headers":{"host":"arm.juhaohuo.tk"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_16","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"nls.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_17","type":"vmess","server":"quranweb34.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb34.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_18","type":"vmess","server":"woiden.739256.xyz","port":443,"cipher":"auto","uuid":"d05d144a-71a9-4720-8c4e-565257953069","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_19","type":"vmess","server":"quranweb29.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb29.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_20","type":"vmess","server":"cf.noaries.de","port":80,"cipher":"auto","uuid":"314c1387-618c-4689-97fc-4bc9a1ae5e05","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sg4.562148.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_21","type":"vmess","server":"holyquran19.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran19.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_22","type":"vmess","server":"lv3.sharecentrepro.org","port":443,"cipher":"none","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"lv3.sharecentrepro.org"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_23","type":"vmess","server":"holyquran1.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_24","type":"vmess","server":"quranweb6.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb6.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_25","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"scw-nl.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_26","type":"vmess","server":"quranweb20.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb20.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_27","type":"vmess","server":"cf-topspeed.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_28","type":"vmess","server":"cf-topspeedv9.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedv9.uk"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_29","type":"vmess","server":"leg.fastv2ray.eu.org","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedvv2.uk"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_30","type":"vmess","server":"quranweb15.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb15.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_31","type":"vmess","server":"quranweb26.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb26.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_32","type":"vmess","server":"ny1.sharecentrepro.org","port":443,"cipher":"none","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/shirker","headers":{"host":"ny1.sharecentrepro.org"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_33","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"fr.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_34","type":"vmess","server":"quranweb19.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb19.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_35","type":"vmess","server":"cf.noaries.de","port":8080,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"contabo.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_36","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"vn.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_37","type":"vmess","server":"cf-topspeedoneplus.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_38","type":"vmess","server":"cf-topspeedvv2.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_39","type":"vmess","server":"cf-topspeedoneplus.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"cf-topspeedoneplus.uk"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_40","type":"vmess","server":"cf.noaries.de","port":2082,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"ovh.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_41","type":"vmess","server":"project.mytargoocloud.live","port":443,"cipher":"auto","uuid":"d7c91c45-8f30-4175-b78b-c18ccf6a1fa5","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sgm1.targoocloud.live"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_42","type":"vmess","server":"holyquran15.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_43","type":"vmess","server":"quranweb15.xyz","port":443,"cipher":"none","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb15.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_44","type":"vmess","server":"quranweb6.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_45","type":"vmess","server":"quran-audio5.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quran-audio5.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_46","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"contabo.cloudflare.quest"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_47","type":"vmess","server":"quranweb9.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_48","type":"trojan","server":"hnm.xiaohouzi.club","port":18831,"udp":true,"password":"21e10785-99c6-316e-a184-a03384ee06e5","sni":"avas01.xiaohouzi.club","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_49","type":"vmess","server":"holyquran15.store","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran15.store"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_50","type":"vmess","server":"cf-topspeedonline.uk","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_51","type":"vmess","server":"quranweb9.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb9.xyz"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_52","type":"vmess","server":"183.237.20.147","port":49795,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_53","type":"vmess","server":"cf.noaries.de","port":2052,"cipher":"auto","uuid":"44ca94c0-b0c8-4e15-ab35-0a7947d7093b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"lsb-aries.heinu.cf"}}}
-  - {"name":"美国(yudou66.com 玉豆免费节点)_54","type":"vmess","server":"quranweb17.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb17.xyz"}}}
-  - {"name":"新加坡(yudou66.com 玉豆免费节点)","type":"vmess","server":"www.udemy.com","port":443,"cipher":"auto","uuid":"afe07da4-e28c-4921-affa-4a5fb4696c04","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/worryfree","headers":{"host":"dynamic-sg2b.obfs.xyz"}}}
-  - {"name":"英国(yudou66.com 玉豆免费节点)_1","type":"vmess","server":"quranweb4.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"quranweb4.xyz"}}}
-  - {"name":"英国(yudou66.com 玉豆免费节点)_2","type":"vmess","server":"holyquran19.store","port":443,"cipher":"none","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time","headers":{"host":"holyquran19.store"}}}
-  - {"name":"英国(yudou66.com 玉豆免费节点)_3","type":"vmess","server":"quranweb1.xyz","port":443,"cipher":"auto","uuid":"8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/current_time"}}
+  - {"name":"科技网络 🇺🇸_107","type":"vmess","server":"199.188.111.232","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.51360818.xyz"}}}
+  - {"name":"科技网络 🇺🇸_116","type":"vmess","server":"142.4.117.109","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.38840828.xyz"}}}
+  - {"name":"科技网络 🇺🇸_124","type":"vmess","server":"137.175.1.13","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.15036832.xyz"}}}
+  - {"name":"科技网络 🇺🇸_149","type":"vmess","server":"142.4.100.7","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.33756710.xyz"}}}
+  - {"name":"科技网络 🇺🇸_117","type":"vmess","server":"198.2.215.120","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.72795025.xyz"}}}
+  - {"name":"科技网络 🇺🇸_132","type":"vmess","server":"137.175.82.137","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.26376970.xyz"}}}
+  - {"name":"科技网络 🇺🇸_113","type":"vmess","server":"198.2.205.65","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.77993560.xyz"}}}
+  - {"name":"科技网络 🇺🇸_98","type":"vmess","server":"107.148.203.123","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.46039636.xyz"}}}
+  - {"name":"科技网络 🇺🇸_99","type":"vmess","server":"192.74.231.81","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.74677567.xyz"}}}
+  - {"name":"科技网络 🇺🇸_49","type":"vmess","server":"198.2.193.8","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.54140630.xyz"}}}
+  - {"name":"科技网络 🇺🇸_57_1","type":"vmess","server":"137.175.47.186","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.23602249.xyz"}}}
+  - {"name":"科技网络 🇺🇸_67","type":"vmess","server":"137.175.32.89","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.94152251.xyz"}}}
+  - {"name":"科技网络 🇺🇸_9","type":"vmess","server":"137.175.35.134","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.13987826.xyz"}}}
+  - {"name":"科技网络 🇺🇸_138_1","type":"vmess","server":"192.74.231.105","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.37976566.xyz"}}}
+  - {"name":"科技网络 🇺🇸_5","type":"vmess","server":"192.74.244.1","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.54146999.xyz"}}}
+  - {"name":"科技网络 🇺🇸_21","type":"vmess","server":"142.4.96.2","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698415308213","headers":{"host":"www.37511588.xyz"}}}
+  - {"name":"科技网络 🇺🇸_129_1","type":"vmess","server":"137.175.12.71","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699280099138","headers":{"host":"www.86052077.xyz"}}}
+  - {"name":"科技网络 🇺🇸_73","type":"vmess","server":"142.4.101.184","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/211826353201","headers":{"host":"www.98561696.xyz"}}}
+  - {"name":"科技网络 🇺🇸_75_1","type":"vmess","server":"142.4.101.184","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1701265991727","headers":{"host":"www.98561696.xyz"}}}
+  - {"name":"科技网络 🇺🇸_57_2","type":"vmess","server":"142.4.98.10","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699965816933","headers":{"host":"www.60218590.xyz"}}}
+  - {"name":"科技网络 🇺🇸_43_1","type":"vmess","server":"142.4.96.6","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.37511588.xyz"}}}
+  - {"name":"科技网络 🇺🇸_10","type":"vmess","server":"107.148.195.132","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698328139038","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"科技网络 🇺🇸_83","type":"vmess","server":"198.2.213.187","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.71585518.xyz"}}}
+  - {"name":"科技网络 🇺🇸_34","type":"vmess","server":"137.175.26.21","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699965816933","headers":{"host":"www.70173865.xyz"}}}
+  - {"name":"科技网络 🇺🇸_159","type":"vmess","server":"142.4.101.184","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.98561696.xyz"}}}
+  - {"name":"科技网络 🇺🇸_8","type":"vmess","server":"137.175.35.131","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699965816933","headers":{"host":"www.13987826.xyz"}}}
+  - {"name":"科技网络 🇺🇸_31_1","type":"vmess","server":"137.175.86.155","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.71453877.xyz"}}}
+  - {"name":"科技网络 🇺🇸_47","type":"vmess","server":"198.200.56.106","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700744137765","headers":{"host":"www.23217609.xyz"}}}
+  - {"name":"科技网络 🇺🇸_1","type":"vmess","server":"199.188.106.228","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.53752665.xyz"}}}
+  - {"name":"科技网络 🇺🇸_71","type":"vmess","server":"192.74.245.231","port":443,"cipher":"auto","uuid":"ac9d75fa-cdf8-4ace-8012-3fcd9bc989b9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/211826353201","headers":{"host":"www.87238975.xyz"}}}
+  - {"name":"科技网络 🇺🇸_144","type":"vmess","server":"192.74.232.25","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.19401390.xyz"}}}
+  - {"name":"科技网络 🇺🇸_90","type":"vmess","server":"107.148.203.147","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.14417851.xyz"}}}
+  - {"name":"科技网络 🇺🇸_126","type":"vmess","server":"199.188.111.232","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.51360818.xyz"}}}
+  - {"name":"科技网络 🇺🇸_6","type":"vmess","server":"192.74.244.1","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.54146999.xyz"}}}
+  - {"name":"科技网络 🇺🇸_88","type":"vmess","server":"192.74.245.231","port":443,"cipher":"auto","uuid":"ac9d75fa-cdf8-4ace-8012-3fcd9bc989b9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1701265991727","headers":{"host":"www.87238975.xyz"}}}
+  - {"name":"科技网络 🇳🇱_25","type":"vmess","server":"154.85.1.184","port":30000,"cipher":"auto","uuid":"f5250c4e-f855-4eff-b73c-a02226d42fe7","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.38858917.xyz"}}}
+  - {"name":"科技网络 🇺🇸_121","type":"vmess","server":"137.175.3.27","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.67834170.xyz"}}}
+  - {"name":"科技网络 🇺🇸_65_1","type":"vmess","server":"142.0.139.43","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.15696446.xyz"}}}
+  - {"name":"科技网络 🇺🇸_23","type":"vmess","server":"198.2.204.40","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.75575729.xyz"}}}
+  - {"name":"科技网络 🇺🇸_215","type":"vmess","server":"137.175.96.24","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1701265991727","headers":{"host":"www.20973848.xyz"}}}
+  - {"name":"科技网络 🇺🇸_102","type":"vmess","server":"142.4.96.2","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698328139038","headers":{"host":"www.37511588.xyz"}}}
+  - {"name":"科技网络 🇺🇸_85_1","type":"vmess","server":"192.74.232.22","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699965816933","headers":{"host":"www.19401390.xyz"}}}
+  - {"name":"科技网络 🇺🇸_43_2","type":"vmess","server":"142.4.114.11","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.53062560.xyz"}}}
+  - {"name":"科技网络 🇺🇸_31_2","type":"vmess","server":"192.74.240.204","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.99555130.xyz"}}}
+  - {"name":"科技网络 🇺🇸_157","type":"vmess","server":"142.0.133.33","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.16440388.xyz"}}}
+  - {"name":"科技网络 🇺🇸_50_1","type":"vmess","server":"137.175.49.199","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698415308213","headers":{"host":"www.37195723.xyz"}}}
+  - {"name":"科技网络 🇺🇸_146","type":"vmess","server":"198.2.205.65","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.77993560.xyz"}}}
+  - {"name":"科技网络 🇺🇸_129_2","type":"vmess","server":"199.188.111.227","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.51360818.xyz"}}}
+  - {"name":"科技网络 🇺🇸_85_2","type":"vmess","server":"107.148.203.98","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.30610304.xyz"}}}
+  - {"name":"科技网络 🇺🇸_75_2","type":"vmess","server":"142.4.105.6","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698415308213","headers":{"host":"www.39281349.xyz"}}}
+  - {"name":"科技网络 🇺🇸_64","type":"vmess","server":"45.58.174.248","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.60360138.xyz"}}}
+  - {"name":"科技网络 🇺🇸_61","type":"vmess","server":"198.2.204.51","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.44337922.xyz"}}}
+  - {"name":"科技网络 🇺🇸_138_2","type":"vmess","server":"107.148.195.137","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"科技网络 🇺🇸_60","type":"vmess","server":"137.175.86.148","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.71453877.xyz"}}}
+  - {"name":"科技网络 🇺🇸_127","type":"vmess","server":"137.175.47.178","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1698415308213","headers":{"host":"www.23602249.xyz"}}}
+  - {"name":"科技网络 🇺🇸_79","type":"vmess","server":"45.58.174.90","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.74386585.xyz"}}}
+  - {"name":"科技网络 🇺🇸_46","type":"vmess","server":"142.171.149.236","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.43622000.xyz"}}}
+  - {"name":"科技网络 🇺🇸_91","type":"vmess","server":"192.74.231.40","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.87867147.xyz"}}}
+  - {"name":"科技网络 🇺🇸_16","type":"vmess","server":"107.148.195.146","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1695118717355","headers":{"host":"www.93599412.xyz"}}}
+  - {"name":"科技网络 🇳🇱_53","type":"vmess","server":"156.249.18.103","port":443,"cipher":"auto","uuid":"63b4b829-7f01-4e26-b037-f04b1f098765","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.32159877.xyz"}}}
+  - {"name":"科技网络 🇺🇸_158","type":"vmess","server":"142.4.101.184","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.98561696.xyz"}}}
+  - {"name":"科技网络 🇺🇸_210","type":"vmess","server":"199.188.111.232","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1701265991727","headers":{"host":"www.51360818.xyz"}}}
+  - {"name":"科技网络 🇺🇸_68","type":"vmess","server":"107.148.195.130","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1695293899027","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"科技网络 🇺🇸_65_2","type":"vmess","server":"142.4.118.105","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.74637789.xyz"}}}
+  - {"name":"科技网络 🇺🇸_77","type":"vmess","server":"107.148.195.130","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"科技网络 🇺🇸_31_3","type":"vmess","server":"142.171.187.178","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.70615435.xyz"}}}
+  - {"name":"科技网络 🇺🇸_30_1","type":"vmess","server":"198.52.121.212","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.15986187.xyz"}}}
+  - {"name":"科技网络 🇺🇸_30_2","type":"vmess","server":"192.74.245.228","port":443,"cipher":"auto","uuid":"ac9d75fa-cdf8-4ace-8012-3fcd9bc989b9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.87238975.xyz"}}}
+  - {"name":"科技网络 🇺🇸_97","type":"vmess","server":"107.148.195.154","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.93599412.xyz"}}}
+  - {"name":"科技网络 🇺🇸_137","type":"vmess","server":"198.2.244.12","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.62735446.xyz"}}}
+  - {"name":"科技网络 🇺🇸_101","type":"vmess","server":"38.63.16.151","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.63384436.xyz"}}}
+  - {"name":"科技网络 🇺🇸_59","type":"vmess","server":"198.2.204.51","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.44337922.xyz"}}}
+  - {"name":"科技网络 🇺🇸_50_2","type":"vmess","server":"142.0.128.169","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700916749018","headers":{"host":"www.78310250.xyz"}}}
+  - {"name":"科技网络 🇺🇸_52","type":"vmess","server":"142.0.128.169","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700744137765","headers":{"host":"www.78310250.xyz"}}}
+  - {"name":"科技网络 🇺🇸_54_1","type":"vmess","server":"137.175.12.66","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1697184716677","headers":{"host":"www.86052077.xyz"}}}
+  - {"name":"科技网络 🇺🇸_93","type":"vmess","server":"107.148.195.149","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1697184716677","headers":{"host":"www.93599412.xyz"}}}
+  - {"name":"科技网络 🇺🇸_55","type":"vmess","server":"137.175.86.157","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699965816933","headers":{"host":"www.71453877.xyz"}}}
+  - {"name":"科技网络 🇺🇸_18","type":"vmess","server":"137.175.26.23","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700232599877","headers":{"host":"www.70173865.xyz"}}}
+  - {"name":"科技网络 🇺🇸_119","type":"vmess","server":"107.148.195.132","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1697184716677","headers":{"host":"www.30372614.xyz"}}}
+  - {"name":"科技网络 🇺🇸_54_2","type":"vmess","server":"142.0.128.169","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1700832055476","headers":{"host":"www.78310250.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1455,203 +700,86 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇺🇸_US_美国_1
-      - _CN_中国->🇺🇸_US_美国_2
-      - _CN_中国->🇺🇸_US_美国_3
-      - _RO_罗马尼亚->🇺🇸_US_美国
-      - '1162'
-      - '121'
-      - '422'
-      - '678'
-      - CN_youtube@资源分享师_140
-      - CN_youtube@资源分享师_180
-      - CN_youtube@资源分享师_189
-      - CN_youtube@资源分享师_192
-      - CN_youtube@资源分享师_199
-      - CN_youtube@资源分享师_215
-      - CN_youtube@资源分享师_247
-      - CN香港(yudou66.com 玉豆免费节点)
-      - US_youtube@资源分享师_118
-      - US_youtube@资源分享师_147
-      - US_youtube@资源分享师_151
-      - US_youtube@资源分享师_157
-      - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_176
-      - US_youtube@资源分享师_196
-      - US_youtube@资源分享师_25
-      - US_youtube@资源分享师_43
-      - US_youtube@资源分享师_56
-      - US_youtube@资源分享师_57
-      - 🇺🇸US美国(youtube阿伟科技)
-      - 🇺🇸美国【YouTube-由零開始】_1
-      - 🇺🇸美国【YouTube-由零開始】_2
-      - 🇺🇸美国【YouTube-由零開始】_3
-      - 🇺🇸美国【YouTube-由零開始】_4
-      - 🇺🇸美国【YouTube-由零開始】_5
-      - 🇺🇸美国【YouTube-由零開始】_6
-      - 🇺🇸美国【YouTube-由零開始】_7
-      - 🇺🇸美国【YouTube-由零開始】_8
-      - 🇺🇸美国【YouTube-由零開始】_9
-      - 🇺🇸美国【YouTube-由零開始】_10
-      - 🇺🇸美国【YouTube-由零開始】_11
-      - 🇺🇸美国【YouTube-由零開始】_12
-      - 🇺🇸美国【YouTube-由零開始】_13
-      - 🇺🇸美国【YouTube-由零開始】_14
-      - 🇺🇸美国【YouTube-由零開始】_15
-      - 🇺🇸美国【YouTube-由零開始】_16
-      - 🇺🇸美国【YouTube-由零開始】_17
-      - 🇺🇸美国【YouTube-由零開始】_18
-      - 德国(yudou66.com 玉豆免费节点)_1
-      - 德国(yudou66.com 玉豆免费节点)_2
-      - 德国(yudou66.com 玉豆免费节点)_3
-      - 德国(yudou66.com 玉豆免费节点)_4
-      - 德国(yudou66.com 玉豆免费节点)_5
-      - 德国(yudou66.com 玉豆免费节点)_6
-      - 德国(yudou66.com 玉豆免费节点)_7
-      - 德国(yudou66.com 玉豆免费节点)_8
-      - 德国(yudou66.com 玉豆免费节点)_9
-      - 德国【YouTube-由零開始】
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 芬兰(yudou66.com 玉豆免费节点)
-      - 韩国(yudou66.com 玉豆免费节点)
-      - 科技网络_1
-      - 科技网络_2
-      - 科技网络_3
-      - 科技网络_4
-      - 科技网络_5
-      - 科技网络_6
-      - 科技网络_7
-      - 科技网络_8
-      - 科技网络_9
-      - 科技网络_10
-      - 科技网络_11
-      - 科技网络_12
-      - 科技网络_13
-      - 科技网络_14
-      - 科技网络_15
-      - 科技网络_16
-      - 科技网络_17
-      - 科技网络_18
-      - 科技网络_19
-      - 科技网络_20
-      - 科技网络_21
-      - 科技网络_22
-      - 科技网络_23
-      - 科技网络_24
-      - 科技网络_25
-      - 科技网络_26
-      - 科技网络_27
-      - 科技网络_28
-      - 科技网络_29
-      - 科技网络_30
-      - 科技网络_31
-      - 科技网络_32
-      - 科技网络_33
-      - 科技网络_34
-      - 科技网络_35
-      - 科技网络_36
-      - 科技网络_37
-      - 科技网络_38
-      - 科技网络_39
-      - 科技网络_40
-      - 科技网络_41
-      - 科技网络_42
-      - 科技网络_43
-      - 科技网络_44
-      - 科技网络_45
-      - 科技网络_46
-      - 科技网络_47
-      - 科技网络_48
-      - 科技网络_49
-      - 科技网络_50
-      - 科技网络_51
-      - 科技网络_52
-      - 科技网络_53
-      - 科技网络_54
-      - 科技网络_55
-      - 科技网络_56
-      - 科技网络_57
-      - 科技网络_58
-      - 科技网络_59
-      - 科技网络_60
-      - 科技网络_61
-      - 科技网络_62
-      - 科技网络_63
-      - 科技网络_64
-      - 科技网络_65
-      - 科技网络_66
-      - 科技网络_67
-      - 科技网络_68
-      - 科技网络_69
-      - 科技网络_70
-      - 科技网络_71
-      - 科技网络_72
-      - 科技网络_73
-      - 科技网络_74
-      - 科技网络_75
-      - 科技网络_76
-      - 科技网络_77
-      - 科技网络_78
-      - 科技网络_79
-      - 科技网络_80
-      - 美国(yudou66.com 玉豆免费节点)_1
-      - 美国(yudou66.com 玉豆免费节点)_2
-      - 美国(yudou66.com 玉豆免费节点)_3
-      - 美国(yudou66.com 玉豆免费节点)_4
-      - 美国(yudou66.com 玉豆免费节点)_5
-      - 美国(yudou66.com 玉豆免费节点)_6
-      - 美国(yudou66.com 玉豆免费节点)_7
-      - 美国(yudou66.com 玉豆免费节点)_8
-      - 美国(yudou66.com 玉豆免费节点)_9
-      - 美国(yudou66.com 玉豆免费节点)_10
-      - 美国(yudou66.com 玉豆免费节点)_11
-      - 美国(yudou66.com 玉豆免费节点)_12
-      - 美国(yudou66.com 玉豆免费节点)_13
-      - 美国(yudou66.com 玉豆免费节点)_14
-      - 美国(yudou66.com 玉豆免费节点)_15
-      - 美国(yudou66.com 玉豆免费节点)_16
-      - 美国(yudou66.com 玉豆免费节点)_17
-      - 美国(yudou66.com 玉豆免费节点)_18
-      - 美国(yudou66.com 玉豆免费节点)_19
-      - 美国(yudou66.com 玉豆免费节点)_20
-      - 美国(yudou66.com 玉豆免费节点)_21
-      - 美国(yudou66.com 玉豆免费节点)_22
-      - 美国(yudou66.com 玉豆免费节点)_23
-      - 美国(yudou66.com 玉豆免费节点)_24
-      - 美国(yudou66.com 玉豆免费节点)_25
-      - 美国(yudou66.com 玉豆免费节点)_26
-      - 美国(yudou66.com 玉豆免费节点)_27
-      - 美国(yudou66.com 玉豆免费节点)_28
-      - 美国(yudou66.com 玉豆免费节点)_29
-      - 美国(yudou66.com 玉豆免费节点)_30
-      - 美国(yudou66.com 玉豆免费节点)_31
-      - 美国(yudou66.com 玉豆免费节点)_32
-      - 美国(yudou66.com 玉豆免费节点)_33
-      - 美国(yudou66.com 玉豆免费节点)_34
-      - 美国(yudou66.com 玉豆免费节点)_35
-      - 美国(yudou66.com 玉豆免费节点)_36
-      - 美国(yudou66.com 玉豆免费节点)_37
-      - 美国(yudou66.com 玉豆免费节点)_38
-      - 美国(yudou66.com 玉豆免费节点)_39
-      - 美国(yudou66.com 玉豆免费节点)_40
-      - 美国(yudou66.com 玉豆免费节点)_41
-      - 美国(yudou66.com 玉豆免费节点)_42
-      - 美国(yudou66.com 玉豆免费节点)_43
-      - 美国(yudou66.com 玉豆免费节点)_44
-      - 美国(yudou66.com 玉豆免费节点)_45
-      - 美国(yudou66.com 玉豆免费节点)_46
-      - 美国(yudou66.com 玉豆免费节点)_47
-      - 美国(yudou66.com 玉豆免费节点)_48
-      - 美国(yudou66.com 玉豆免费节点)_49
-      - 美国(yudou66.com 玉豆免费节点)_50
-      - 美国(yudou66.com 玉豆免费节点)_51
-      - 美国(yudou66.com 玉豆免费节点)_52
-      - 美国(yudou66.com 玉豆免费节点)_53
-      - 美国(yudou66.com 玉豆免费节点)_54
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - 英国(yudou66.com 玉豆免费节点)_1
-      - 英国(yudou66.com 玉豆免费节点)_2
-      - 英国(yudou66.com 玉豆免费节点)_3
+      - 科技网络 🇺🇸_107
+      - 科技网络 🇺🇸_116
+      - 科技网络 🇺🇸_124
+      - 科技网络 🇺🇸_149
+      - 科技网络 🇺🇸_117
+      - 科技网络 🇺🇸_132
+      - 科技网络 🇺🇸_113
+      - 科技网络 🇺🇸_98
+      - 科技网络 🇺🇸_99
+      - 科技网络 🇺🇸_49
+      - 科技网络 🇺🇸_57_1
+      - 科技网络 🇺🇸_67
+      - 科技网络 🇺🇸_9
+      - 科技网络 🇺🇸_138_1
+      - 科技网络 🇺🇸_5
+      - 科技网络 🇺🇸_21
+      - 科技网络 🇺🇸_129_1
+      - 科技网络 🇺🇸_73
+      - 科技网络 🇺🇸_75_1
+      - 科技网络 🇺🇸_57_2
+      - 科技网络 🇺🇸_43_1
+      - 科技网络 🇺🇸_10
+      - 科技网络 🇺🇸_83
+      - 科技网络 🇺🇸_34
+      - 科技网络 🇺🇸_159
+      - 科技网络 🇺🇸_8
+      - 科技网络 🇺🇸_31_1
+      - 科技网络 🇺🇸_47
+      - 科技网络 🇺🇸_1
+      - 科技网络 🇺🇸_71
+      - 科技网络 🇺🇸_144
+      - 科技网络 🇺🇸_90
+      - 科技网络 🇺🇸_126
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_88
+      - 科技网络 🇳🇱_25
+      - 科技网络 🇺🇸_121
+      - 科技网络 🇺🇸_65_1
+      - 科技网络 🇺🇸_23
+      - 科技网络 🇺🇸_215
+      - 科技网络 🇺🇸_102
+      - 科技网络 🇺🇸_85_1
+      - 科技网络 🇺🇸_43_2
+      - 科技网络 🇺🇸_31_2
+      - 科技网络 🇺🇸_157
+      - 科技网络 🇺🇸_50_1
+      - 科技网络 🇺🇸_146
+      - 科技网络 🇺🇸_129_2
+      - 科技网络 🇺🇸_85_2
+      - 科技网络 🇺🇸_75_2
+      - 科技网络 🇺🇸_64
+      - 科技网络 🇺🇸_61
+      - 科技网络 🇺🇸_138_2
+      - 科技网络 🇺🇸_60
+      - 科技网络 🇺🇸_127
+      - 科技网络 🇺🇸_79
+      - 科技网络 🇺🇸_46
+      - 科技网络 🇺🇸_91
+      - 科技网络 🇺🇸_16
+      - 科技网络 🇳🇱_53
+      - 科技网络 🇺🇸_158
+      - 科技网络 🇺🇸_210
+      - 科技网络 🇺🇸_68
+      - 科技网络 🇺🇸_65_2
+      - 科技网络 🇺🇸_77
+      - 科技网络 🇺🇸_31_3
+      - 科技网络 🇺🇸_30_1
+      - 科技网络 🇺🇸_30_2
+      - 科技网络 🇺🇸_97
+      - 科技网络 🇺🇸_137
+      - 科技网络 🇺🇸_101
+      - 科技网络 🇺🇸_59
+      - 科技网络 🇺🇸_50_2
+      - 科技网络 🇺🇸_52
+      - 科技网络 🇺🇸_54_1
+      - 科技网络 🇺🇸_93
+      - 科技网络 🇺🇸_55
+      - 科技网络 🇺🇸_18
+      - 科技网络 🇺🇸_119
+      - 科技网络 🇺🇸_54_2
 
 rules:
 # 本地/局域网地址
@@ -3590,7 +2718,7 @@ rules:
 # YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#,USER-AGENT,AbemaTV*,🌍 国外媒体
+#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
@@ -3599,7 +2727,7 @@ rules:
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#,USER-AGENT,All4*,🌍 国外媒体
+#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -3621,14 +2749,14 @@ rules:
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-#,URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#,USER-AGENT,AppleNews*,🌍 国外媒体
-#,USER-AGENT,com.apple.news*,🌍 国外媒体
+#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#   - USER-AGENT,AppleNews*,🌍 国外媒体
+#   - USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#,USER-AGENT,BBCiPlayer*,🌍 国外媒体
+#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -3643,13 +2771,13 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#,USER-AGENT,Anime*,🌍 国外媒体
+#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#,USER-AGENT,DAZN*,🌍 国外媒体
+#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -3661,14 +2789,14 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#,USER-AGENT,Deezer*,🌍 国外媒体
+#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,Disney*,🌍 国外媒体
-#,USER-AGENT,Disney+*,🌍 国外媒体
+#   - USER-AGENT,Disney*,🌍 国外媒体
+#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -3689,24 +2817,24 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#,USER-AGENT,encoreTVB*,🌍 国外媒体
+#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#,USER-AGENT,FOX%20NOW*,🌍 国外媒体
+#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#,USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#,USER-AGENT,HBOMAX*,🌍 国外媒体
+#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
+#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#,USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
+#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
   - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
@@ -3727,7 +2855,7 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#,USER-AGENT,HWTVMobile*,🌍 国外媒体
+#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -3743,12 +2871,12 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#,USER-AGENT,ITV_Player*,🌍 国外媒体
+#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#,USER-AGENT,JOOX*,🌍 国外媒体
-#,USER-AGENT,WeMusic*,🌍 国外媒体
+#   - USER-AGENT,JOOX*,🌍 国外媒体
+#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -3764,32 +2892,32 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#,USER-AGENT,KKTV*,🌍 国外媒体
-#,USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
+#   - USER-AGENT,KKTV*,🌍 国外媒体
+#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#,USER-AGENT,LINE%20TV*,🌍 国外媒体
-#,USER-AGENT,LINE*,🌍 国外媒体
+#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
+#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#,USER-AGENT,My5*,🌍 国外媒体
+#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#,USER-AGENT,mytv*,🌍 国外媒体
+#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#,USER-AGENT,Argo*,🌍 国外媒体
+#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -3829,24 +2957,24 @@ rules:
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#,USER-AGENT,Niconico*,🌍 国外媒体
+#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-#,USER-AGENT,PBS*,🌍 国外媒体
+#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#,USER-AGENT,Pandora*,🌍 国外媒体
+#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#,USER-AGENT,SoundCloud*,🌍 国外媒体
+#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#,USER-AGENT,Spotify*,🌍 国外媒体
+#   - USER-AGENT,Spotify*,🌍 国外媒体
   - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
@@ -3855,14 +2983,14 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#,USER-AGENT,TIDAL*,🌍 国外媒体
+#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#,USER-AGENT,TaiwanGood*,🌍 国外媒体
+#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#,USER-AGENT,TikTok*,🌍 国外媒体
+#   - USER-AGENT,TikTok*,🌍 国外媒体
   - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
@@ -3880,7 +3008,7 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#,USER-AGENT,Viu*,🌍 国外媒体
+#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -3896,9 +3024,9 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#,USER-AGENT,*youtube*,🌍 国外媒体
-#,USER-AGENT,YouTube*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
+#   - USER-AGENT,*youtube*,🌍 国外媒体
+#   - USER-AGENT,YouTube*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -3913,10 +3041,10 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#,USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#,USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#,USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
 # Telegram
 #PROCESS-NAME,Telegram.exe
