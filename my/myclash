@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-01-25 12:01:17
+# 创建时间：2025-02-05 14:24:08
 # 使用模版：V2RaySE 默认模版
-# 节点数量：103
+# 节点数量：90
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,760 +86,669 @@ dns:
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"科技网络 🇰🇷\r_1","type":"trojan","server":"211.252.12.227","port":50000,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇳🇱\r_1","type":"trojan","server":"45.134.21.8","port":2053,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络\r_1","type":"trojan","server":"sage.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇷🇺\r_1","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=marambashi\\_marambashi/?ed=2560"}}
+  - {"name":"科技网络\r_2","type":"vless","server":"92.60.74.100","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
+  - {"name":"科技网络 🇺🇸_1","type":"vmess","server":"192.74.247.202","port":30005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.73444693.xyz"}}}
+  - {"name":"科技网络\r_3","type":"trojan","server":"91.197.3.168","port":8443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_2","type":"vmess","server":"38.33.34.10","port":38003,"cipher":"auto","uuid":"b65da4af-a12a-4a59-9316-4549e12ba62c","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.90766244.xyz"}}}
+  - {"name":"科技网络\r_4","type":"vless","server":"104.26.12.101","port":2052,"uuid":"dfc1a9ab-6241-4b73-92f7-b299fc6b7751","tls":false,"servername":"Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt","network":"ws","ws-opts":{"path":"/?ed=1080"}}
+  - {"name":"科技网络 🇰🇷\r_2","type":"trojan","server":"112.170.255.67","port":50000,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_3","type":"vmess","server":"192.74.244.163","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.67685829.xyz"}}}
+  - {"name":"科技网络 🇺🇸_4","type":"vmess","server":"137.175.42.247","port":30001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.94346384.xyz"}}}
+  - {"name":"科技网络 🇺🇸_5","type":"vmess","server":"198.200.48.229","port":37006,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.46281147.xyz"}}}
+  - {"name":"科技网络 🇩🇪\r","type":"trojan","server":"178.128.198.120","port":8443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络\r_5","type":"vless","server":"172.64.35.129","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
+  - {"name":"科技网络 🇺🇸_6","type":"vmess","server":"137.175.21.181","port":38001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.19404931.xyz"}}}
+  - {"name":"科技网络 🇺🇸_7","type":"vmess","server":"137.175.39.194","port":38002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738317565398","headers":{"host":"www.61974602.xyz"}}}
+  - {"name":"科技网络 🇺🇸_8","type":"vmess","server":"192.74.242.248","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.37108619.xyz"}}}
+  - {"name":"科技网络 🇺🇸_9","type":"vmess","server":"192.74.242.248","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.37108619.xyz"}}}
+  - {"name":"科技网络 🇺🇸_10","type":"vmess","server":"38.33.44.12","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.63855454.xyz"}}}
+  - {"name":"科技网络 🇺🇸_11","type":"vmess","server":"38.33.56.42","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.36790472.xyz"}}}
+  - {"name":"科技网络 🇺🇸_12","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.65420682.xyz"}}}
+  - {"name":"科技网络\r_6","type":"trojan","server":"kip.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络\r_7","type":"vless","server":"104.22.53.235","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
+  - {"name":"科技网络 🇺🇸_13","type":"vmess","server":"198.200.48.229","port":37006,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.46281147.xyz"}}}
+  - {"name":"科技网络 🇺🇸_14","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.65420682.xyz"}}}
+  - {"name":"科技网络 🇺🇸_15","type":"vmess","server":"38.11.49.53","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.45700497.xyz"}}}
+  - {"name":"科技网络 🇺🇸\r_1","type":"vless","server":"151.101.66.133","port":443,"uuid":"25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2","tls":true,"servername":"magdl.ir","network":"ws","ws-opts":{"path":"/stream/"}}
+  - {"name":"科技网络 🇨🇳\r","type":"ss","server":"jsyd.piaomiaoxu.net","port":44721,"password":"fd054eb3-ddbe-4bf3-a359-27d0095bf814","cipher":"aes-256-gcm"}
+  - {"name":"科技网络 🇺🇸_16","type":"vmess","server":"192.74.236.131","port":30004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.59833770.xyz"}}}
+  - {"name":"科技网络 🇺🇸_17","type":"vmess","server":"192.74.236.131","port":30004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.59833770.xyz"}}}
   - {"name":"科技网络 🇨🇳_1","type":"vmess","server":"183.236.51.23","port":56601,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇺🇸\r_1","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"科技网络 🇺🇸\r_2","type":"trojan","server":"192.200.160.169","port":2096,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_1","type":"vless","server":"pranab.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸_1","type":"vmess","server":"192.74.244.187","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.17330585.xyz"}}}
-  - {"name":"科技网络 🇺🇸_2","type":"vmess","server":"192.74.244.187","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734690244618","headers":{"host":"www.17330585.xyz"}}}
-  - {"name":"科技网络\r_2","type":"vless","server":"198.41.209.27","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048"}}
-  - {"name":"科技网络 🇺🇸_3","type":"vmess","server":"198.200.48.245","port":37006,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734690244618","headers":{"host":"www.23355292.xyz"}}}
-  - {"name":"科技网络 🇺🇸_4","type":"vmess","server":"198.200.48.245","port":37006,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.23355292.xyz"}}}
-  - {"name":"科技网络 🇺🇸_5","type":"vmess","server":"38.33.49.97","port":37002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1737714427104","headers":{"host":"www.43499599.xyz"}}}
-  - {"name":"科技网络 🇨🇳\r_1","type":"ss","server":"ctmm.gscloud.bond","port":31620,"password":"f16d3752-7bae-474e-87dc-f892df2caeaf","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"科技网络 🇺🇸_6","type":"vmess","server":"199.180.103.22","port":37007,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1735293551986","headers":{"host":"www.35743578.xyz"}}}
-  - {"name":"科技网络 🇺🇸_7","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.65420682.xyz"}}}
-  - {"name":"科技网络 🇺🇸_8","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.65420682.xyz"}}}
-  - {"name":"科技网络 🇺🇸_9","type":"vmess","server":"38.33.56.38","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688543400","headers":{"host":"www.24006857.xyz"}}}
-  - {"name":"科技网络\r_3","type":"vless","server":"198.41.199.226","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048"}}
-  - {"name":"科技网络 🇺🇸_10","type":"vmess","server":"38.33.34.58","port":36002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1735208290718","headers":{"host":"www.63000971.xyz"}}}
-  - {"name":"科技网络\r_4","type":"vless","server":"104.22.53.235","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
-  - {"name":"科技网络 🇺🇸_11","type":"vmess","server":"38.33.56.38","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734689926106","headers":{"host":"www.24006857.xyz"}}}
-  - {"name":"科技网络 🇨🇳_2","type":"vmess","server":"183.236.51.23","port":53002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇸🇪\r","type":"vless","server":"95.164.51.24","port":2501,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_5","type":"vless","server":"92.60.74.100","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"科技网络\r_6","type":"vless","server":"arvind.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸_12","type":"vmess","server":"38.11.69.47","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.52140341.xyz"}}}
-  - {"name":"科技网络 🇺🇸_13","type":"vmess","server":"192.74.236.154","port":30004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734690244618","headers":{"host":"www.91334565.xyz"}}}
-  - {"name":"科技网络 🇺🇸_14","type":"vmess","server":"38.11.69.47","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734690244618","headers":{"host":"www.52140341.xyz"}}}
-  - {"name":"科技网络 🇸🇬\r_1","type":"vless","server":"27.50.48.186","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇸🇬\r_2","type":"vless","server":"92.243.74.23","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_7","type":"trojan","server":"damien.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_3","type":"trojan","server":"27.50.48.154","port":8443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_4","type":"trojan","server":"27.50.49.136","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_8","type":"vless","server":"sage.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇸🇬\r_5","type":"vless","server":"27.50.49.61","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸_15","type":"vmess","server":"108.186.26.174","port":37004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1737188349819","headers":{"host":"www.93976091.xyz"}}}
-  - {"name":"科技网络 🇯🇵\r","type":"vless","server":"live.skornorth.com","port":443,"uuid":"1d9f05fa-9189-57a1-9664-3ecce65ccba5","tls":true,"servername":"MOSIV2.CC","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇺🇸_16","type":"vmess","server":"192.74.242.229","port":38004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734948103318","headers":{"host":"www.70778598.xyz"}}}
-  - {"name":"科技网络\r_9","type":"trojan","server":"ignacio.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_10","type":"trojan","server":"sage.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_6","type":"vless","server":"27.50.48.126","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇵🇱\r","type":"trojan","server":"185.188.147.79","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_7","type":"vless","server":"27.50.49.177","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_3","type":"trojan","server":"108.165.152.225","port":2083,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸_17","type":"vmess","server":"192.74.239.213","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1737188349819","headers":{"host":"www.73276259.xyz"}}}
-  - {"name":"科技网络 🇸🇬\r_8","type":"vless","server":"206.238.236.137","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_11","type":"vless","server":"172.64.35.129","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
-  - {"name":"科技网络 🇺🇸\r_4","type":"vless","server":"199.34.228.187","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_5","type":"trojan","server":"199.34.228.187","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_9","type":"vless","server":"27.50.49.136","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸_18","type":"vmess","server":"192.74.231.198","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.57277774.xyz"}}}
-  - {"name":"科技网络 🇨🇳_3","type":"vmess","server":"183.236.51.23","port":46602,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络\r_12","type":"vless","server":"213.159.76.238","port":2052,"uuid":"d724758c-505b-43be-b313-717be1fddc8a","tls":false,"network":"ws","ws-opts":{"path":"/vless"}}
-  - {"name":"科技网络 🇺🇸\r_6","type":"vless","server":"192.200.160.35","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇨🇳\r_2","type":"ss","server":"qh62onjn.slashdevslashnetslashtun.net","port":17007,"password":"71GJL31AYF3CXZ2K","cipher":"aes-256-gcm"}
-  - {"name":"科技网络 🇸🇬\r_10","type":"trojan","server":"27.50.49.61","port":2096,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_13","type":"vless","server":"104.21.30.21","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048"}}
-  - {"name":"科技网络 🇺🇸_19","type":"vmess","server":"108.186.26.174","port":37004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1737626189510","headers":{"host":"www.93976091.xyz"}}}
-  - {"name":"科技网络\r_14","type":"trojan","server":"188.164.159.185","port":8443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸_20","type":"vmess","server":"38.33.56.38","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734689664614","headers":{"host":"www.24006857.xyz"}}}
-  - {"name":"科技网络 🇺🇸_21","type":"vmess","server":"38.33.34.58","port":36002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1735293135218","headers":{"host":"www.63000971.xyz"}}}
-  - {"name":"科技网络\r_15","type":"vless","server":"104.21.30.52","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048"}}
-  - {"name":"科技网络\r_16","type":"trojan","server":"45.150.115.195","port":2087,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸\r_7","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
-  - {"name":"科技网络 🇺🇸\r_8","type":"trojan","server":"35.155.38.149","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸_22","type":"vmess","server":"192.74.231.198","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.57277774.xyz"}}}
-  - {"name":"科技网络 🇸🇬\r_11","type":"vless","server":"206.238.236.37","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_17","type":"trojan","server":"154.197.64.248","port":8443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇩🇪\r_1","type":"trojan","server":"3.122.86.99","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇷🇺\r_1","type":"trojan","server":"5.182.85.255","port":2096,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_18","type":"vless","server":"92.60.74.100","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
-  - {"name":"科技网络\r_19","type":"vless","server":"172.67.27.46","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
-  - {"name":"科技网络 🇨🇳_4","type":"vmess","server":"120.234.102.229","port":52908,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇩🇪\r_2","type":"trojan","server":"3.124.196.164","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_20","type":"trojan","server":"45.153.7.216","port":2053,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸_23","type":"vmess","server":"38.11.69.47","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.52140341.xyz"}}}
-  - {"name":"科技网络 🇭🇰\r","type":"vless","server":"45.39.199.215","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇷🇺\r_2","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"科技网络 🇸🇬\r_12","type":"trojan","server":"27.50.49.37","port":2053,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇸🇬\r_13","type":"vless","server":"27.50.48.154","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_9","type":"trojan","server":"154.21.93.92","port":37955,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸\r_10","type":"trojan","server":"167.68.4.58","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_21","type":"vless","server":"damien.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_11","type":"trojan","server":"63.141.128.66","port":2087,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_22","type":"vless","server":"172.66.168.197","port":443,"uuid":"054d503d-4748-47a6-8118-71a96c51f2d9","tls":true,"servername":"Nl2-FulL.PrIvAteiP.NeT","network":"ws","ws-opts":{"path":"/VLESS"}}
-  - {"name":"科技网络 🇩🇪\r_3","type":"trojan","server":"3.74.9.115","port":8443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇷🇺\r_3","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
-  - {"name":"科技网络\r_23","type":"trojan","server":"lynn.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络\r_24","type":"vless","server":"213.159.76.238","port":2052,"uuid":"d724758c-505b-43be-b313-717be1fddc8a","tls":false,"network":"ws","ws-opts":{"path":"/vless"}}
-  - {"name":"科技网络_1","type":"vmess","server":"s1.db-link01.top","port":80,"cipher":"auto","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.24.32.204","headers":{"host":"100-97-115-235.s1.db-link01.top"}}}
-  - {"name":"科技网络\r_25","type":"vless","server":"95.164.116.22","port":2501,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_26","type":"trojan","server":"188.164.159.22","port":2096,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸\r_12","type":"vless","server":"151.101.66.133","port":443,"uuid":"25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2","tls":true,"servername":"magdl.ir","network":"ws","ws-opts":{"path":"/stream/"}}
-  - {"name":"科技网络\r_27","type":"trojan","server":"arvind.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络 🇺🇸_24","type":"vmess","server":"192.74.244.187","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.17330585.xyz"}}}
-  - {"name":"科技网络_2","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
-  - {"name":"科技网络 🇺🇸\r_13","type":"trojan","server":"185.218.7.217","port":1443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
-  - {"name":"科技网络_3","type":"vmess","server":"shs.xiaoqi666.xyz","port":2086,"cipher":"auto","uuid":"3fd7b958-2161-46e1-b6fc-bd6bb2165312","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络_4","type":"vmess","server":"190.93.245.230","port":2086,"cipher":"auto","uuid":"3fd7b958-2161-46e1-b6fc-bd6bb2165312","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"shs.xiaoqi666.xyz"}}}
-  - {"name":"科技网络 🇳🇱\r_1","type":"ss","server":"193.29.139.179","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"科技网络 🇫🇷\r","type":"ss","server":"163.172.118.110","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
-  - {"name":"科技网络\r_28","type":"vless","server":"104.26.12.101","port":2052,"uuid":"dfc1a9ab-6241-4b73-92f7-b299fc6b7751","tls":false,"servername":"Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt","network":"ws","ws-opts":{"path":"/?ed=1080"}}
-  - {"name":"科技网络 🇺🇸\r_14","type":"vless","server":"192.200.160.15","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇳🇱\r_2","type":"ss","server":"193.29.139.189","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"科技网络 🇺🇸\r_15","type":"trojan","server":"199.34.228.71","port":8443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngep.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_18","type":"vmess","server":"38.33.34.50","port":36002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.99546411.xyz"}}}
+  - {"name":"科技网络 🇺🇸_19","type":"vmess","server":"137.175.39.194","port":38002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738432110766","headers":{"host":"www.61974602.xyz"}}}
+  - {"name":"科技网络 🇺🇸_20","type":"vmess","server":"137.175.39.194","port":38002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490102545","headers":{"host":"www.61974602.xyz"}}}
+  - {"name":"科技网络 🇺🇸_21","type":"vmess","server":"192.74.231.202","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490607673","headers":{"host":"www.57277774.xyz"}}}
+  - {"name":"科技网络 🇭🇰\r_1","type":"vless","server":"8.218.26.21","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"科技网络\r_8","type":"vless","server":"92.60.74.100","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"科技网络 🇺🇸_22","type":"vmess","server":"192.74.231.202","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.57277774.xyz"}}}
+  - {"name":"科技网络 🇺🇸_23","type":"vmess","server":"137.175.23.141","port":36003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.92453412.xyz"}}}
+  - {"name":"科技网络 🇺🇸_24","type":"vmess","server":"38.33.44.12","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.63855454.xyz"}}}
+  - {"name":"科技网络 🇺🇸_25","type":"vmess","server":"137.175.39.194","port":38002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.61974602.xyz"}}}
+  - {"name":"科技网络 🇺🇸_26","type":"vmess","server":"192.74.231.202","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738402429044","headers":{"host":"www.57277774.xyz"}}}
+  - {"name":"科技网络 🇷🇺\r_2","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=marambashi_marambashi/?ed=2560"}}
+  - {"name":"科技网络\r_9","type":"vless","server":"92.60.74.100","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"科技网络 🇺🇸_27","type":"vmess","server":"192.74.241.133","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.38740067.xyz"}}}
+  - {"name":"科技网络 🇺🇸_28","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.65420682.xyz"}}}
+  - {"name":"科技网络 🇺🇸_29","type":"vmess","server":"38.33.1.170","port":37003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.24257549.xyz"}}}
+  - {"name":"科技网络 🇺🇸_30","type":"vmess","server":"38.33.56.42","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490102545","headers":{"host":"www.36790472.xyz"}}}
+  - {"name":"科技网络 🇺🇸\r_2","type":"trojan","server":"154.17.226.170","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络\r_10","type":"vless","server":"104.24.7.232","port":80,"uuid":"468d811a-8540-4517-9779-0f542b5150d2","tls":false,"servername":"mute-wood-561e-ppal.megiva7664.workers.dev","network":"ws","ws-opts":{"path":"/ProxyIP=ProxyIP.US.fxxk.dedyn.io"}}
+  - {"name":"科技网络 🇺🇸_31","type":"vmess","server":"38.11.69.36","port":30003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.54846389.xyz"}}}
+  - {"name":"科技网络 🇺🇸_32","type":"vmess","server":"38.11.50.67","port":31005,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.65420682.xyz"}}}
+  - {"name":"科技网络 🇺🇸_33","type":"vmess","server":"38.11.71.68","port":37002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.58502763.xyz"}}}
+  - {"name":"科技网络 🇰🇷\r_3","type":"trojan","server":"119.196.34.173","port":50000,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇷🇺\r_3","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=MARAMBASHI_MARAMBASHI/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_34","type":"vmess","server":"192.74.231.198","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734789272508","headers":{"host":"www.57277774.xyz"}}}
+  - {"name":"科技网络 🇰🇷\r_4","type":"trojan","server":"59.18.218.70","port":50000,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_35","type":"vmess","server":"192.74.231.198","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1734688869321","headers":{"host":"www.57277774.xyz"}}}
+  - {"name":"科技网络\r_11","type":"trojan","server":"duke.ns.cloudflare.com","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇨🇳_2","type":"vmess","server":"120.234.102.229","port":52908,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"科技网络\r_12","type":"trojan","server":"kfjdi.pages.dev","port":443,"udp":true,"password":"er668","sni":"kfjdi.pages.dev","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kfjdi.pages.dev"}}}
+  - {"name":"科技网络 🇺🇸_36","type":"vmess","server":"142.4.106.1","port":31001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.29675080.xyz"}}}
+  - {"name":"科技网络 🇺🇸\r_3","type":"vless","server":"84.32.131.178","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"科技网络 🇰🇷\r_5","type":"trojan","server":"119.198.67.48","port":10033,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸\r_4","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
+  - {"name":"科技网络 🇳🇱\r_2","type":"trojan","server":"109.234.39.115","port":2053,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇰🇷\r_6","type":"trojan","server":"220.94.7.86","port":16443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇳🇱\r_3","type":"trojan","server":"45.155.121.169","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇰🇷\r_7","type":"trojan","server":"59.0.201.231","port":35531,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇷🇺\r_4","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048security=tls"}}
+  - {"name":"科技网络 🇳🇱\r_4","type":"trojan","server":"194.164.35.192","port":2053,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇷🇺\r_5","type":"vless","server":"46.254.92.33","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048fp=ios"}}
+  - {"name":"科技网络 🇰🇷\r_8","type":"trojan","server":"210.222.30.180","port":17100,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_37","type":"vmess","server":"192.74.244.163","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.67685829.xyz"}}}
+  - {"name":"科技网络 🇰🇷\r_9","type":"trojan","server":"175.192.27.197","port":16992,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_38","type":"vmess","server":"38.48.149.4","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738490102545","headers":{"host":"www.76460205.xyz"}}}
+  - {"name":"科技网络 🇺🇸_39","type":"vmess","server":"137.175.18.229","port":38002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.63575583.xyz"}}}
+  - {"name":"科技网络\r_13","type":"vless","server":"172.67.27.46","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","tls":false,"servername":"cc.ailicf.us.kg","network":"ws","ws-opts":{"path":"/b5cdabf0-e04"}}
+  - {"name":"科技网络 🇰🇷\r_10","type":"trojan","server":"125.130.105.60","port":12150,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_40","type":"vmess","server":"192.74.239.215","port":31003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738663426633","headers":{"host":"www.23625582.xyz"}}}
+  - {"name":"科技网络 🇺🇸\r_5","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"科技网络 🇫🇷\r","type":"trojan","server":"51.44.86.78","port":443,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇭🇰\r_2","type":"vless","server":"47.57.13.107","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"科技网络 🇰🇷\r_11","type":"trojan","server":"125.134.175.67","port":50000,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_41","type":"vmess","server":"107.149.189.69","port":37002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.13480033.xyz"}}}
+  - {"name":"科技网络 🇺🇸_42","type":"vmess","server":"38.48.149.4","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.76460205.xyz"}}}
+  - {"name":"科技网络 🇰🇷\r_12","type":"trojan","server":"211.199.65.186","port":14524,"udp":true,"password":"Aimer","sni":"ngepz.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ngepz.ambercc.filegear-sg.me"}}}
+  - {"name":"科技网络 🇺🇸_43","type":"vmess","server":"38.174.162.101","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1738665106189","headers":{"host":"www.95108080.xyz"}}}
+  - {"name":"科技网络 🇺🇸\r_6","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -862,109 +771,96 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 科技网络 🇨🇳_1
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
+      - "科技网络 🇰🇷\r_1"
+      - "科技网络 🇳🇱\r_1"
       - "科技网络\r_1"
-      - 科技网络 🇺🇸_1
-      - 科技网络 🇺🇸_2
+      - "科技网络 🇷🇺\r_1"
       - "科技网络\r_2"
+      - 科技网络 🇺🇸_1
+      - "科技网络\r_3"
+      - 科技网络 🇺🇸_2
+      - "科技网络\r_4"
+      - "科技网络 🇰🇷\r_2"
       - 科技网络 🇺🇸_3
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇨🇳\r_1"
+      - "科技网络 🇩🇪\r"
+      - "科技网络\r_5"
       - 科技网络 🇺🇸_6
       - 科技网络 🇺🇸_7
       - 科技网络 🇺🇸_8
       - 科技网络 🇺🇸_9
-      - "科技网络\r_3"
       - 科技网络 🇺🇸_10
-      - "科技网络\r_4"
       - 科技网络 🇺🇸_11
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇸🇪\r"
-      - "科技网络\r_5"
-      - "科技网络\r_6"
       - 科技网络 🇺🇸_12
+      - "科技网络\r_6"
+      - "科技网络\r_7"
       - 科技网络 🇺🇸_13
       - 科技网络 🇺🇸_14
-      - "科技网络 🇸🇬\r_1"
-      - "科技网络 🇸🇬\r_2"
-      - "科技网络\r_7"
-      - "科技网络 🇸🇬\r_3"
-      - "科技网络 🇸🇬\r_4"
-      - "科技网络\r_8"
-      - "科技网络 🇸🇬\r_5"
       - 科技网络 🇺🇸_15
-      - "科技网络 🇯🇵\r"
+      - "科技网络 🇺🇸\r_1"
+      - "科技网络 🇨🇳\r"
       - 科技网络 🇺🇸_16
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络 🇸🇬\r_6"
-      - "科技网络 🇵🇱\r"
-      - "科技网络 🇸🇬\r_7"
-      - "科技网络 🇺🇸\r_3"
       - 科技网络 🇺🇸_17
-      - "科技网络 🇸🇬\r_8"
-      - "科技网络\r_11"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇸🇬\r_9"
+      - 科技网络 🇨🇳_1
       - 科技网络 🇺🇸_18
-      - 科技网络 🇨🇳_3
-      - "科技网络\r_12"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇸🇬\r_10"
-      - "科技网络\r_13"
       - 科技网络 🇺🇸_19
-      - "科技网络\r_14"
       - 科技网络 🇺🇸_20
       - 科技网络 🇺🇸_21
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
+      - "科技网络 🇭🇰\r_1"
+      - "科技网络\r_8"
       - 科技网络 🇺🇸_22
-      - "科技网络 🇸🇬\r_11"
-      - "科技网络\r_17"
-      - "科技网络 🇩🇪\r_1"
-      - "科技网络 🇷🇺\r_1"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - 科技网络 🇨🇳_4
-      - "科技网络 🇩🇪\r_2"
-      - "科技网络\r_20"
       - 科技网络 🇺🇸_23
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇷🇺\r_2"
-      - "科技网络 🇸🇬\r_12"
-      - "科技网络 🇸🇬\r_13"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络\r_21"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络\r_22"
-      - "科技网络 🇩🇪\r_3"
-      - "科技网络 🇷🇺\r_3"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - 科技网络_1
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络 🇺🇸\r_12"
-      - "科技网络\r_27"
       - 科技网络 🇺🇸_24
-      - 科技网络_2
-      - "科技网络 🇺🇸\r_13"
-      - 科技网络_3
-      - 科技网络_4
-      - "科技网络 🇳🇱\r_1"
-      - "科技网络 🇫🇷\r"
-      - "科技网络\r_28"
-      - "科技网络 🇺🇸\r_14"
+      - 科技网络 🇺🇸_25
+      - 科技网络 🇺🇸_26
+      - "科技网络 🇷🇺\r_2"
+      - "科技网络\r_9"
+      - 科技网络 🇺🇸_27
+      - 科技网络 🇺🇸_28
+      - 科技网络 🇺🇸_29
+      - 科技网络 🇺🇸_30
+      - "科技网络 🇺🇸\r_2"
+      - "科技网络\r_10"
+      - 科技网络 🇺🇸_31
+      - 科技网络 🇺🇸_32
+      - 科技网络 🇺🇸_33
+      - "科技网络 🇰🇷\r_3"
+      - "科技网络 🇷🇺\r_3"
+      - 科技网络 🇺🇸_34
+      - "科技网络 🇰🇷\r_4"
+      - 科技网络 🇺🇸_35
+      - "科技网络\r_11"
+      - 科技网络 🇨🇳_2
+      - "科技网络\r_12"
+      - 科技网络 🇺🇸_36
+      - "科技网络 🇺🇸\r_3"
+      - "科技网络 🇰🇷\r_5"
+      - "科技网络 🇺🇸\r_4"
       - "科技网络 🇳🇱\r_2"
-      - "科技网络 🇺🇸\r_15"
+      - "科技网络 🇰🇷\r_6"
+      - "科技网络 🇳🇱\r_3"
+      - "科技网络 🇰🇷\r_7"
+      - "科技网络 🇷🇺\r_4"
+      - "科技网络 🇳🇱\r_4"
+      - "科技网络 🇷🇺\r_5"
+      - "科技网络 🇰🇷\r_8"
+      - 科技网络 🇺🇸_37
+      - "科技网络 🇰🇷\r_9"
+      - 科技网络 🇺🇸_38
+      - 科技网络 🇺🇸_39
+      - "科技网络\r_13"
+      - "科技网络 🇰🇷\r_10"
+      - 科技网络 🇺🇸_40
+      - "科技网络 🇺🇸\r_5"
+      - "科技网络 🇫🇷\r"
+      - "科技网络 🇭🇰\r_2"
+      - "科技网络 🇰🇷\r_11"
+      - 科技网络 🇺🇸_41
+      - 科技网络 🇺🇸_42
+      - "科技网络 🇰🇷\r_12"
+      - 科技网络 🇺🇸_43
+      - "科技网络 🇺🇸\r_6"
 
 rules:
 # 本地/局域网地址
