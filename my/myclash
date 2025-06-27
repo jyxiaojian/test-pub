@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-06-26 00:49:21
+# 创建时间：2025-06-28 01:10:15
 # 使用模版：V2RaySE 默认模版
-# 节点数量：186
+# 节点数量：131
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,1341 +86,956 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"科技网络 🇨🇳_1","type":"vmess","server":"183.236.51.38","port":41024,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_2","type":"vmess","server":"120.198.71.214","port":31180,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇺🇸\r_1","type":"vless","server":"167.68.42.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇺🇸\r_2","type":"vless","server":"209.94.90.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇺🇸\r_3","type":"vless","server":"192.0.54.134","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_4","type":"vless","server":"69.84.182.53","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_5","type":"vless","server":"192.0.54.24","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_6","type":"vless","server":"63.141.128.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇺🇸\r_7","type":"vless","server":"160.79.105.223","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_8","type":"vless","server":"160.79.105.223","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_9","type":"vless","server":"160.79.104.175","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_10","type":"vless","server":"192.0.54.24","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_11","type":"vless","server":"160.79.104.117","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_12","type":"vless","server":"69.84.182.41","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸_1","type":"vmess","server":"198.200.56.16","port":37002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1750858741089","headers":{"host":"www.68584158.xyz"}}}
-  - {"name":"科技网络 🇺🇸_2","type":"vmess","server":"38.11.220.185","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1750858741089","headers":{"host":"www.36790472.xyz"}}}
-  - {"name":"科技网络 🇺🇸_3","type":"vmess","server":"38.11.49.40","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1750858741089","headers":{"host":"www.45700497.xyz"}}}
-  - {"name":"科技网络 🇺🇸_4","type":"vmess","server":"137.175.40.201","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1750858741089","headers":{"host":"www.95108080.xyz"}}}
-  - {"name":"科技网络 🇺🇸_5","type":"vmess","server":"64.32.1.239","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1750858741089","headers":{"host":"www.39676427.xyz"}}}
-  - {"name":"科技网络 🇹🇼\r","type":"vless","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇰🇷\r_1","type":"vless","server":"59.25.82.79","port":12318,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇰🇷\r_2","type":"vless","server":"59.25.82.79","port":12318,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇭🇰\r","type":"vless","server":"47.57.233.126","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇩🇪\r","type":"vless","server":"45.80.111.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇨🇳\r_1","type":"trojan","server":"83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com","port":21233,"udp":true,"password":"bcc58e88-e147-11ec-b286-f23c91cfbbc9","sni":"83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_3","type":"vmess","server":"120.232.153.40","port":31209,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_4","type":"vmess","server":"120.232.153.40","port":31209,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_5","type":"vmess","server":"111.26.109.79","port":30828,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
-  - {"name":"科技网络 🇨🇳_6","type":"vmess","server":"v9.heduian.link","port":30809,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
-  - {"name":"科技网络 🇨🇳_7","type":"vmess","server":"v32.heduian.link","port":30832,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
-  - {"name":"科技网络 🇨🇳_8","type":"vmess","server":"120.232.153.40","port":31209,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_9","type":"vmess","server":"183.236.51.38","port":46921,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_2","type":"trojan","server":"120.233.44.201","port":21179,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k30.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_3","type":"ss","server":"zf2.10101251.xyz","port":30725,"password":"3ee90aa9-8831-4ea3-9425-c361090a938d","cipher":"aes-256-gcm"}
-  - {"name":"科技网络 🇨🇳_10","type":"vmess","server":"120.232.153.41","port":49597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_4","type":"trojan","server":"120.233.44.201","port":21079,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k32.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_5","type":"trojan","server":"120.233.44.201","port":21181,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k31.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_11","type":"vmess","server":"183.236.51.38","port":49154,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_12","type":"vmess","server":"183.236.51.38","port":41191,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_6","type":"vless","server":"103.44.255.81","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇨🇳\r_7","type":"vless","server":"103.44.255.81","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇦🇺\r_1","type":"vless","server":"152.67.125.174","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇦🇺\r_2","type":"vless","server":"152.67.125.174","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_1","type":"vless","server":"104.21.23.210","port":443,"uuid":"c8eac4b7-95ba-4ce0-920d-c3279eb3b391","tls":true,"servername":"00099876543.932.pp.ua","network":"ws","ws-opts":{"path":"/6r23FpdcA4KNAXX"}}
-  - {"name":"科技网络\r_2","type":"vless","server":"162.159.153.42","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_3","type":"vless","server":"104.19.145.14","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_4","type":"vless","server":"104.18.80.243","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_5","type":"vless","server":"104.17.100.185","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_6","type":"vless","server":"104.18.80.243","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_7","type":"ss","server":"185.237.185.77","port":20036,"password":"E95HYLF806NPZ1B3","cipher":"aes-256-gcm"}
-  - {"name":"科技网络\r_8","type":"vless","server":"162.159.241.5","port":2053,"uuid":"e7bc7c8e-07bb-4ff8-a06a-39b8665be2d4","tls":true,"servername":"chat.neshaan.org","network":"ws","ws-opts":{"path":"/admins?ed=2560"}}
-  - {"name":"科技网络\r_9","type":"vless","server":"104.17.110.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_10","type":"vless","server":"89.116.250.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络\r_11","type":"vless","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_12","type":"vless","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_13","type":"vless","server":"www.ddwhm.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_14","type":"vless","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_15","type":"vless","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_16","type":"vless","server":"172.67.73.163","port":8080,"uuid":"4ea841c1-0dc1-4563-9f47-deba8407cb4e","tls":false,"servername":"J9.oDOtZrHUoO.ZuLAIR.ORg.","network":"ws","ws-opts":{"path":"/?ed=2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"}}
-  - {"name":"科技网络\r_17","type":"vless","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_18","type":"vless","server":"104.21.22.133","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","tls":true,"servername":"00999.20220420.pp.ua","network":"ws","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD"}}
-  - {"name":"科技网络\r_19","type":"vless","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_20","type":"vless","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_21","type":"vless","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_22","type":"vless","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_23","type":"vless","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_24","type":"vless","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_25","type":"vless","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_26","type":"vless","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_27","type":"vless","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_28","type":"vless","server":"172.67.149.239","port":443,"uuid":"3ed60fc0-f13d-490a-a244-c827a8a8b1e5","tls":true,"servername":"wwwwwws.4444926.xyz","network":"ws","ws-opts":{"path":"/j4Wxk3KUHJho91NIJLrX"}}
-  - {"name":"科技网络\r_29","type":"vless","server":"www.okcupid.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_30","type":"vless","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_31","type":"vless","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_32","type":"vless","server":"00999.20220420.pp.ua","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","tls":true,"servername":"00999.20220420.pp.ua","network":"ws","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD"}}
-  - {"name":"科技网络\r_33","type":"vless","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_34","type":"vless","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_35","type":"vless","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_36","type":"vless","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_37","type":"vless","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_38","type":"vless","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_39","type":"vless","server":"p09.iran.pp.ua","port":443,"uuid":"e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c","tls":true,"servername":"p09.iran.pp.ua","network":"ws","ws-opts":{"path":"/lmBCBsFSWDrTMywp5KKSues"}}
-  - {"name":"科技网络\r_40","type":"vless","server":"104.18.147.201","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_41","type":"vless","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_42","type":"vless","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_43","type":"vless","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_44","type":"vless","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_45","type":"vless","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_46","type":"vless","server":"zoomgov.vipren.biz.id","port":443,"uuid":"6d7d355a-0ffb-40e5-b215-66e97f94d424","tls":true,"servername":"zoomgov.vipren.biz.id","network":"ws","ws-opts":{"path":"/143.244.130.180=443"}}
-  - {"name":"科技网络\r_47","type":"vless","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_48","type":"vless","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_49","type":"vless","server":"104.17.71.31","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_50","type":"vless","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_51","type":"vless","server":"zoomgov.vipren.biz.id","port":443,"uuid":"73ca8631-780e-4f81-b784-ca447ab151d7","tls":true,"servername":"zoomgov.vipren.biz.id","network":"ws","ws-opts":{"path":"/176.97.66.175=443"}}
-  - {"name":"科技网络\r_52","type":"vless","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_53","type":"vless","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_54","type":"vless","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_55","type":"trojan","server":"zoomgov.vipren.biz.id","port":443,"udp":true,"password":"a16cbe8f-3b0c-4de9-b7f0-5213ed7e07ef","sni":"zoomgov.vipren.biz.id","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/38.181.70.7=16240","headers":{"host":"zoomgov.vipren.biz.id"}}}
-  - {"name":"科技网络\r_56","type":"vless","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_57","type":"vless","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_58","type":"vless","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_59","type":"vless","server":"www.okcupid.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_60","type":"vless","server":"www.ddwhm.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_61","type":"vless","server":"162.159.153.217","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_62","type":"vless","server":"ashton.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_63","type":"vless","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_64","type":"vless","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_65","type":"vless","server":"lewis.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_66","type":"vless","server":"presidential-salmon-vz-a587c1b2.koyeb.app","port":443,"uuid":"b95f1f1a-8801-4b2d-a870-2b9807d9018a","tls":true,"servername":"presidential-salmon-vz-a587c1b2.koyeb.app","network":"ws","ws-opts":{"path":"/vl"}}
-  - {"name":"科技网络\r_67","type":"vless","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_68","type":"vless","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_69","type":"vless","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_70","type":"vless","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_71","type":"vless","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_72","type":"vless","server":"nikon.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_73","type":"vless","server":"1111111q.0890604.xyz","port":443,"uuid":"a7c9c017-db10-4d15-b01b-0634db498b57","tls":true,"servername":"1111111Q.0890604.XYZ","network":"ws","ws-opts":{"path":"/xZjr7v1DqrYyamxeTh7sLJtI1"}}
-  - {"name":"科技网络\r_74","type":"vless","server":"104.21.24.195","port":443,"uuid":"a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2","tls":true,"servername":"9999uuuu.999836.xyz","network":"ws","ws-opts":{"path":"/MIrEVIUviSe8ydvnmRKWDa8"}}
-  - {"name":"科技网络\r_75","type":"vless","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_76","type":"vless","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_77","type":"vless","server":"uriah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_78","type":"vless","server":"1111111q.0890604.xyz","port":443,"uuid":"a7c9c017-db10-4d15-b01b-0634db498b57","tls":true,"servername":"1111111q.0890604.xyz","network":"ws","ws-opts":{"path":"/xZjr7v1DqrYyamxeTh7sLJtI1"}}
-  - {"name":"科技网络\r_79","type":"vless","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_80","type":"vless","server":"iiiiiiiiiiio.huangshang.dpdns.org","port":443,"uuid":"4b33b482-25bc-49e4-b866-878c914d945a","tls":true,"servername":"iiiiiiiiiiio.huangshang.dpdns.org","network":"ws","ws-opts":{"path":"/CpMgWdnDWahQyyQCjn8kmnN0ehd"}}
-  - {"name":"科技网络\r_81","type":"vless","server":"cccccccf.222769.xyz","port":443,"uuid":"ce921385-2b31-45fe-84c5-1843e8ae845b","tls":true,"servername":"cccccccf.222769.xyz","network":"ws","ws-opts":{"path":"/1xrOld7e5RpK3I98dxLkez"}}
-  - {"name":"科技网络\r_82","type":"vless","server":"www.speedtest.net","port":443,"uuid":"4d91916f-a7fd-419b-8b90-640bb8d1b9f4","tls":true,"servername":"titantablomanahamrah.ir","network":"ws","ws-opts":{"path":"/c4tjlIC7U45DzHLo/MTkzLjEyMy44MS4xMDU"}}
-  - {"name":"科技网络\r_83","type":"vless","server":"104.21.68.76","port":443,"uuid":"a96cb093-b164-4bc6-bd27-deb0e385de07","tls":true,"servername":"dddddddd.222769.xyz","network":"ws","ws-opts":{"path":"/3zsSOohi9huFfjEPpIlRig3qizHXb"}}
-  - {"name":"科技网络\r_84","type":"vless","server":"172.67.135.37","port":443,"uuid":"cf8c791e-9d0b-4e90-aaf6-41ac62468416","tls":true,"servername":"iiiiiiiiiiiio.459.pp.ua","network":"ws","ws-opts":{"path":"/dtBdvnoJO8180gomOew3d"}}
-  - {"name":"科技网络\r_85","type":"vless","server":"172.67.220.32","port":443,"uuid":"a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2","tls":true,"servername":"rrrfghy7.999836.xyz","network":"ws","ws-opts":{"path":"/MIrEVIUviSe8ydvnmRKWDa8"}}
-  - {"name":"科技网络\r_86","type":"trojan","server":"cccvffgty.444752.xyz","port":443,"udp":true,"password":"512d9674-db12-44ca-a1b5-654244549b65","sni":"cccvffgty.444752.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/HOi2k5ElZdeML7Ua7dX3JIrYk7zm","headers":{"host":"cccvffgty.444752.xyz"}}}
-  - {"name":"科技网络\r_87","type":"vless","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_88","type":"vless","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_89","type":"vless","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_90","type":"vless","server":"xxxxxxxxx.999864.xyz","port":443,"uuid":"a96cb093-b164-4bc6-bd27-deb0e385de07","tls":true,"servername":"xxxxxxxxx.999864.xyz","network":"ws","ws-opts":{"path":"/3zsSOohi9huFfjEPpIlRig3qizHXb"}}
-  - {"name":"科技网络\r_91","type":"vless","server":"104.17.110.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_92","type":"vless","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_93","type":"vless","server":"104.21.26.17","port":443,"uuid":"cf8c791e-9d0b-4e90-aaf6-41ac62468416","tls":true,"servername":"iiiiiiiiiiiio.459.pp.ua","network":"ws","ws-opts":{"path":"/dtBdvnoJO8180gomOew3d"}}
-  - {"name":"科技网络\r_94","type":"vless","server":"104.19.150.28","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_95","type":"vless","server":"162.159.153.42","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_96","type":"vless","server":"104.17.100.185","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_97","type":"vless","server":"172.67.131.27","port":443,"uuid":"509ed9b7-8d64-4204-8ec8-6b749020ac3f","tls":true,"servername":"oo098.89060004.xyz","network":"ws","ws-opts":{"path":"/VlJKGXt3aXBStn7"}}
-  - {"name":"科技网络\r_98","type":"vless","server":"172.67.218.209","port":443,"uuid":"fa050497-fc2a-45ee-89c0-96670c4ecb65","tls":true,"servername":"ppp0.89890604.xyz","network":"ws","ws-opts":{"path":"/0USILhLWoWgQPuXTwt"}}
-  - {"name":"科技网络\r_99","type":"vless","server":"172.67.67.92","port":80,"uuid":"f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d","tls":false,"servername":"delam.ahaysiahzangi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_100","type":"vless","server":"172.67.136.116","port":80,"uuid":"148709e4-402b-48dd-8892-ed39b55ea45c","tls":false,"servername":"entezar.loseyourself.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_101","type":"vless","server":"172.67.21.2","port":80,"uuid":"f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d","tls":false,"servername":"delam.ahaysiahzangi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_102","type":"vless","server":"172.67.56.112","port":80,"uuid":"148709e4-402b-48dd-8892-ed39b55ea45c","tls":false,"servername":"entezar.loseyourself.dpdns.org","network":"ws","ws-opts":{"path":"/BaRAyeIran?ed=2560"}}
-  - {"name":"科技网络\r_103","type":"vless","server":"104.27.126.10","port":80,"uuid":"b55ec078-3b17-4ed1-a697-71f464cdcaaa","tls":false,"servername":"kssepa.sabzipolobamahi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_104","type":"vless","server":"104.24.135.83","port":80,"uuid":"f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d","tls":false,"servername":"delam.ahaysiahzangi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_105","type":"vless","server":"104.24.34.94","port":80,"uuid":"b55ec078-3b17-4ed1-a697-71f464cdcaaa","tls":false,"servername":"kssepa.sabzipolobamahi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_106","type":"vless","server":"104.26.15.85","port":80,"uuid":"2a11c595-935d-4e1b-81d4-ab8dd1e10bff","tls":false,"servername":"DECENt-ReFerEnCE.ZUlAir.oRG.","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"科技网络\r_107","type":"vless","server":"172.67.11.138","port":80,"uuid":"b55ec078-3b17-4ed1-a697-71f464cdcaaa","tls":false,"servername":"kssepa.sabzipolobamahi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_108","type":"vless","server":"172.67.14.59","port":80,"uuid":"b55ec078-3b17-4ed1-a697-71f464cdcaaa","tls":false,"servername":"kssepa.sabzipolobamahi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇨🇳\r_8","type":"trojan","server":"120.233.44.201","port":21056,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k14.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_9","type":"trojan","server":"120.233.44.201","port":21118,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k17.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳\r_10","type":"trojan","server":"120.233.44.201","port":21003,"udp":true,"password":"2b1ed981-6547-4094-998b-06a3323d6f6c","sni":"k15.tudou211.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_13","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"api100-core-quic-lf.amemv.com"}}}
-  - {"name":"科技网络 🇺🇸\r_13","type":"vless","server":"199.34.230.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇺🇸\r_14","type":"vless","server":"69.84.182.12","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_15","type":"vless","server":"160.79.105.219","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_16","type":"vless","server":"135.84.76.143","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇺🇸\r_17","type":"vless","server":"66.81.247.251","port":8880,"uuid":"0132166f-e702-48ed-a9e7-b07af768faf8","tls":false,"servername":"cf.d3z.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"科技网络 🇷🇺\r","type":"vless","server":"45.67.215.58","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇫🇷\r_1","type":"vless","server":"185.16.110.181","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇫🇷\r_2","type":"vless","server":"185.16.110.200","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇨🇳_14","type":"vmess","server":"120.232.153.40","port":43292,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络 🇨🇳_15","type":"vmess","server":"183.236.51.38","port":41024,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"科技网络","type":"vmess","server":"wsxxzxsd.999834.xyz","port":80,"cipher":"auto","uuid":"30602b6d-5d5c-4f56-9b65-9ae2fd9348cb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TetDjP6oSiF3sGVHqPd73hl","headers":{"host":"wsxxzxsd.999834.xyz"}}}
-  - {"name":"科技网络\r_109","type":"vless","server":"www.whatismyip.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_110","type":"vless","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_111","type":"vless","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_112","type":"vless","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_113","type":"vless","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_114","type":"vless","server":"160.123.255.163","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_115","type":"vless","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_116","type":"vless","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_117","type":"vless","server":"104.18.147.201","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_118","type":"vless","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_119","type":"vless","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_120","type":"vless","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_121","type":"vless","server":"172.67.130.204","port":443,"uuid":"c226ac5d-65e9-4379-95c3-fb542bc242d8","tls":true,"servername":"hhhhhhhhhhh.777198.xyz","network":"ws","ws-opts":{"path":"/OjdW89Bpg4ykd4O"}}
-  - {"name":"科技网络\r_122","type":"vless","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_123","type":"vless","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv1.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_124","type":"vless","server":"104.21.70.32","port":443,"uuid":"fa050497-fc2a-45ee-89c0-96670c4ecb65","tls":true,"servername":"ppp0.89890604.xyz","network":"ws","ws-opts":{"path":"/0USILhLWoWgQPuXTwt"}}
-  - {"name":"科技网络\r_125","type":"vless","server":"zoomgov.vipren.biz.id","port":443,"uuid":"7a075e11-a8a9-4f5a-82fe-318e5a53bc44","tls":true,"servername":"zoomgov.vipren.biz.id","network":"ws","ws-opts":{"path":"/152.32.181.246=44070"}}
-  - {"name":"科技网络\r_126","type":"vless","server":"104.17.219.208","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"bv.ylks0033.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络\r_127","type":"vless","server":"172.67.9.145","port":80,"uuid":"b55ec078-3b17-4ed1-a697-71f464cdcaaa","tls":false,"servername":"kssepa.sabzipolobamahi.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
-  - {"name":"科技网络 🇨🇳_16","type":"vmess","server":"120.234.102.229","port":41174,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"科技网络\r_1","type":"vless","server":"00999.20220420.pp.ua","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","tls":true,"servername":"00999.20220420.pp.ua","network":"ws","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD"}}
+  - {"name":"104.17.142.12\r","type":"vless","server":"104.17.142.12","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_1","type":"vless","server":"104.18.94.107","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_2","type":"vless","server":"104.17.223.37","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"www.4chan.org\r","type":"vless","server":"www.4chan.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"NL\r_1","type":"vless","server":"150.230.20.156","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"iplocation.io\r_1","type":"trojan","server":"iplocation.io","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"kc1.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kc1.vs2024.dpdns.org"}}}
+  - {"name":"🇺🇸 US\r_1","type":"vless","server":"104.17.128.1","port":2096,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_3","type":"vless","server":"104.18.93.7","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_1","type":"vmess","server":"v12.heduian.link","port":30812,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
+  - {"name":"科技网络 🇺🇸_1","type":"vmess","server":"67.21.75.40","port":45555,"cipher":"auto","uuid":"b12c4f8d-1aaa-4333-98e6-ec939292c580","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.38530229.xyz"}}}
+  - {"name":"CMCC\r_4","type":"vless","server":"104.18.94.238","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_5","type":"vless","server":"104.19.144.212","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_2","type":"vmess","server":"v40.heduian.link","port":30840,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/index","headers":{"host":"api100-core-quic-lf.amemv.com"}}}
+  - {"name":"科技网络 🇺🇸_2","type":"vmess","server":"67.21.82.131","port":45555,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.76741796.xyz"}}}
+  - {"name":"CT\r_1","type":"vless","server":"162.159.153.144","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_3","type":"vmess","server":"45.58.180.35","port":30001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025583021","headers":{"host":"www.97749651.xyz"}}}
+  - {"name":"172.67.181.209\r","type":"trojan","server":"172.67.181.209","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"dt.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dt.vs2024.dpdns.org"}}}
+  - {"name":"科技网络 🇺🇸_4","type":"vmess","server":"64.32.28.235","port":30002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.75075204.xyz"}}}
+  - {"name":"科技网络 🇺🇸_5","type":"vmess","server":"107.167.5.148","port":31001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025583021","headers":{"host":"www.32969216.xyz"}}}
+  - {"name":"科技网络 🇺🇸_6","type":"vmess","server":"45.58.186.23","port":31001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.24420256.xyz"}}}
+  - {"name":"科技网络 🇺🇸_7","type":"vmess","server":"45.58.166.156","port":30002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.25741825.xyz"}}}
+  - {"name":"JP\r_1","type":"vless","server":"140.238.58.181","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"dylan.ns.cloudflare.com\r_1","type":"trojan","server":"dylan.ns.cloudflare.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"kc1.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kc1.vs2024.dpdns.org"}}}
+  - {"name":"NL\r_2","type":"vless","server":"45.154.98.100","port":1010,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_8","type":"vmess","server":"107.167.31.38","port":30000,"cipher":"auto","uuid":"603a9dc0-78de-419c-a22a-441c27d178a4","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.57723972.xyz"}}}
+  - {"name":"wilson.ns.cloudflare.com\r","type":"vless","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"kyree.ns.cloudflare.com\r","type":"vless","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇭🇰 HK\r_1","type":"trojan","server":"104.17.142.12","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"CMCC\r_6","type":"vless","server":"104.17.101.175","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"decker.ns.cloudflare.com\r","type":"vless","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"NL\r_3","type":"vless","server":"45.154.98.100","port":5008,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_7","type":"vless","server":"104.19.145.14","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"162.159.133.85\r","type":"vless","server":"162.159.133.85","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇺🇸 US\r_2","type":"trojan","server":"104.17.128.1","port":2096,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"dt.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dt.vs2024.dpdns.org"}}}
+  - {"name":"科技网络 🇺🇸_9","type":"vmess","server":"64.32.17.45","port":30004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025583021","headers":{"host":"www.80382494.xyz"}}}
+  - {"name":"US\r_1","type":"vless","server":"108.174.61.161","port":38712,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"dnschecker.org\r_1","type":"vless","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_10","type":"vmess","server":"107.167.31.126","port":31004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025583021","headers":{"host":"www.34250201.xyz"}}}
+  - {"name":"科技网络\r_2","type":"vless","server":"xscdfr.859886.xyz","port":443,"uuid":"288124da-0d68-42f4-9f48-70dc4dcc55a6","tls":true,"servername":"xscdfr.859886.xyz","network":"ws","ws-opts":{"path":"/e49RZLgIb0TdfgF5HdHEIupMZeK"}}
+  - {"name":"US\r_2","type":"vless","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_11","type":"vmess","server":"38.11.220.185","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025174486","headers":{"host":"www.36790472.xyz"}}}
+  - {"name":"科技网络 🇨🇳_3","type":"vmess","server":"v9.heduian.link","port":30809,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
+  - {"name":"www.ipchicken.com\r_1","type":"trojan","server":"www.ipchicken.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"dt.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dt.vs2024.dpdns.org"}}}
+  - {"name":"NL\r_4","type":"vless","server":"45.154.98.100","port":5008,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇺🇸 US\r_3","type":"vless","server":"104.17.128.1","port":2096,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络\r_3","type":"vless","server":"p09.iran.pp.ua","port":443,"uuid":"e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c","tls":true,"servername":"p09.iran.pp.ua","network":"ws","ws-opts":{"path":"/lmBCBsFSWDrTMywp5KKSues"}}
+  - {"name":"KR\r_1","type":"vless","server":"132.145.94.80","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_4","type":"vmess","server":"120.232.153.41","port":49597,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US\r_4","type":"trojan","server":"104.25.254.4","port":2087,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"dnschecker.org\r_2","type":"trojan","server":"dnschecker.org","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"CA\r","type":"vless","server":"140.238.158.238","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇺🇸 US\r_5","type":"trojan","server":"104.17.128.1","port":2096,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"CT\r_2","type":"vless","server":"162.159.153.170","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"US\r_3","type":"vless","server":"108.174.61.161","port":59581,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_8","type":"vless","server":"104.16.249.115","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳\r","type":"trojan","server":"dozo01.flztjc.top","port":8313,"udp":true,"password":"2c605663-b89a-5734-a9d6-97d4743d72cf","sni":"hk-13-568.flztjc.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"科技网络 🇨🇳_5","type":"vmess","server":"v28.heduian.link","port":30828,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
+  - {"name":"www.hugedomains.com\r","type":"trojan","server":"www.hugedomains.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"KR\r_2","type":"vless","server":"112.173.102.47","port":11111,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_12","type":"vmess","server":"64.32.1.239","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025174486","headers":{"host":"www.39676427.xyz"}}}
+  - {"name":"US\r_4","type":"vless","server":"108.174.61.161","port":59581,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_9","type":"vless","server":"104.18.85.29","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_6","type":"vmess","server":"120.232.153.40","port":52152,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"comicabc.com\r_1","type":"trojan","server":"comicabc.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"🇭🇰 HK\r_2","type":"trojan","server":"104.17.68.85","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"braden.ns.cloudflare.com\r","type":"vless","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"ipv4.ip.sb\r_1","type":"vless","server":"ipv4.ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"IL\r_1","type":"vless","server":"129.159.132.0","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"www.ipchicken.com\r_2","type":"vless","server":"www.ipchicken.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CT\r_3","type":"vless","server":"162.159.153.42","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_10","type":"vless","server":"104.18.85.29","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"time.is\r","type":"trojan","server":"time.is","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"kc1.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kc1.vs2024.dpdns.org"}}}
+  - {"name":"CMCC\r_11","type":"vless","server":"104.16.249.115","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_12","type":"vless","server":"104.18.147.201","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_13","type":"vmess","server":"38.38.148.249","port":37001,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751026269450","headers":{"host":"www.37721281.xyz"}}}
+  - {"name":"US\r_5","type":"vless","server":"108.174.61.161","port":38712,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_13","type":"vless","server":"104.19.150.28","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_14","type":"vless","server":"104.19.145.14","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"172.67.106.26\r","type":"vless","server":"172.67.106.26","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_15","type":"vless","server":"198.41.208.23","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_16","type":"vless","server":"104.18.82.55","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CT\r_4","type":"vless","server":"162.159.153.170","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_17","type":"vless","server":"104.16.246.173","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"ip.gs\r","type":"vless","server":"ip.gs","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"ipv4.ip.sb\r_2","type":"vless","server":"ipv4.ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"ipv4.ip.sb\r_3","type":"trojan","server":"ipv4.ip.sb","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"kc1.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kc1.vs2024.dpdns.org"}}}
+  - {"name":"CMCC\r_18","type":"vless","server":"104.17.210.171","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"JP\r_2","type":"vless","server":"121.80.244.179","port":12333,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CT\r_5","type":"vless","server":"162.159.152.53","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络\r_4","type":"vless","server":"00999.20220420.pp.ua","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","tls":true,"servername":"00999.20220420.pP.uA","network":"ws","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD"}}
+  - {"name":"JP\r_3","type":"vless","server":"64.110.101.125","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"comicabc.com\r_2","type":"vless","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_14","type":"vmess","server":"38.11.50.198","port":30004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025583021","headers":{"host":"www.54846389.xyz"}}}
+  - {"name":"ipv4.ip.sb\r_4","type":"trojan","server":"ipv4.ip.sb","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"IL\r_2","type":"vless","server":"129.159.132.0","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇺🇸_15","type":"vmess","server":"137.175.40.201","port":38003,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1751025174486","headers":{"host":"www.95108080.xyz"}}}
+  - {"name":"CT\r_6","type":"vless","server":"162.159.153.42","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"JP\r_4","type":"vless","server":"131.186.33.175","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_19","type":"vless","server":"104.17.101.175","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_7","type":"vmess","server":"111.26.109.79","port":30828,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"ocbc.com"}}}
+  - {"name":"172.67.79.211\r_1","type":"vless","server":"172.67.79.211","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"www.udemy.com\r","type":"trojan","server":"www.udemy.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"科技网络 🇨🇳_8","type":"vmess","server":"120.232.153.40","port":52152,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"TW\r_1","type":"vless","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"KR\r_3","type":"vless","server":"211.114.180.156","port":14534,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"TW\r_2","type":"vless","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_20","type":"vless","server":"104.18.83.92","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"172.67.79.211\r_2","type":"trojan","server":"172.67.79.211","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"kc1.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kc1.vs2024.dpdns.org"}}}
+  - {"name":"172.67.79.211\r_3","type":"trojan","server":"172.67.79.211","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"dt.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dt.vs2024.dpdns.org"}}}
+  - {"name":"科技网络\r_5","type":"vless","server":"ddcvvbhyu78.852224.dpdns.org","port":443,"uuid":"f108e0e2-5f12-42b6-9e67-1b2f073ffb2b","tls":true,"servername":"ddcvvbhyu78.852224.dpdns.org","network":"ws","ws-opts":{"path":"/DB8W1KX5xnNGIhMum8sDKRwvFCJq"}}
+  - {"name":"KR\r_4","type":"vless","server":"112.173.102.47","port":11111,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_21","type":"vless","server":"104.16.246.173","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"JP\r_5","type":"vless","server":"121.80.244.179","port":12333,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"科技网络 🇨🇳_9","type":"vmess","server":"v32.heduian.link","port":30832,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
+  - {"name":"dylan.ns.cloudflare.com\r_2","type":"trojan","server":"dylan.ns.cloudflare.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"tx.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tx.vs2024.dpdns.org"}}}
+  - {"name":"iplocation.io\r_2","type":"vless","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_22","type":"vless","server":"104.18.83.92","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇭🇰 HK\r_3","type":"vless","server":"104.17.68.85","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"NL\r_5","type":"vless","server":"150.230.20.156","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"huxley.ns.cloudflare.com\r","type":"vless","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"kc1.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"comicabc.com\r_3","type":"vless","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"BR\r","type":"vless","server":"132.226.163.224","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"🇭🇰 HK\r_4","type":"vless","server":"104.17.142.12","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_23","type":"vless","server":"104.17.189.171","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"comicabc.com\r_4","type":"trojan","server":"comicabc.com","port":443,"udp":true,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","sni":"dt.vs2024.dpdns.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dt.vs2024.dpdns.org"}}}
+  - {"name":"CMCC\r_24","type":"vless","server":"104.17.104.243","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_25","type":"vless","server":"104.17.219.208","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"CMCC\r_26","type":"vless","server":"104.16.242.72","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"SG\r_1","type":"vless","server":"43.165.191.25","port":23023,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dt.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
+  - {"name":"SG\r_2","type":"vless","server":"43.165.191.25","port":23023,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"tx.vs2024.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1443,192 +1058,137 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "科技网络\r_1"
+      - "104.17.142.12\r"
+      - "CMCC\r_1"
+      - "CMCC\r_2"
+      - "www.4chan.org\r"
+      - "NL\r_1"
+      - "iplocation.io\r_1"
+      - "🇺🇸 US\r_1"
+      - "CMCC\r_3"
       - 科技网络 🇨🇳_1
-      - 科技网络 🇨🇳_2
-      - "科技网络 🇺🇸\r_1"
-      - "科技网络 🇺🇸\r_2"
-      - "科技网络 🇺🇸\r_3"
-      - "科技网络 🇺🇸\r_4"
-      - "科技网络 🇺🇸\r_5"
-      - "科技网络 🇺🇸\r_6"
-      - "科技网络 🇺🇸\r_7"
-      - "科技网络 🇺🇸\r_8"
-      - "科技网络 🇺🇸\r_9"
-      - "科技网络 🇺🇸\r_10"
-      - "科技网络 🇺🇸\r_11"
-      - "科技网络 🇺🇸\r_12"
       - 科技网络 🇺🇸_1
+      - "CMCC\r_4"
+      - "CMCC\r_5"
+      - 科技网络 🇨🇳_2
       - 科技网络 🇺🇸_2
+      - "CT\r_1"
       - 科技网络 🇺🇸_3
+      - "172.67.181.209\r"
       - 科技网络 🇺🇸_4
       - 科技网络 🇺🇸_5
-      - "科技网络 🇹🇼\r"
-      - "科技网络 🇰🇷\r_1"
-      - "科技网络 🇰🇷\r_2"
-      - "科技网络 🇭🇰\r"
-      - "科技网络 🇩🇪\r"
-      - "科技网络 🇨🇳\r_1"
-      - 科技网络 🇨🇳_3
-      - 科技网络 🇨🇳_4
-      - 科技网络 🇨🇳_5
-      - 科技网络 🇨🇳_6
-      - 科技网络 🇨🇳_7
-      - 科技网络 🇨🇳_8
-      - 科技网络 🇨🇳_9
-      - "科技网络 🇨🇳\r_2"
-      - "科技网络 🇨🇳\r_3"
-      - 科技网络 🇨🇳_10
-      - "科技网络 🇨🇳\r_4"
-      - "科技网络 🇨🇳\r_5"
-      - 科技网络 🇨🇳_11
-      - 科技网络 🇨🇳_12
-      - "科技网络 🇨🇳\r_6"
-      - "科技网络 🇨🇳\r_7"
-      - "科技网络 🇦🇺\r_1"
-      - "科技网络 🇦🇺\r_2"
-      - "科技网络\r_1"
+      - 科技网络 🇺🇸_6
+      - 科技网络 🇺🇸_7
+      - "JP\r_1"
+      - "dylan.ns.cloudflare.com\r_1"
+      - "NL\r_2"
+      - 科技网络 🇺🇸_8
+      - "wilson.ns.cloudflare.com\r"
+      - "kyree.ns.cloudflare.com\r"
+      - "🇭🇰 HK\r_1"
+      - "CMCC\r_6"
+      - "decker.ns.cloudflare.com\r"
+      - "NL\r_3"
+      - "CMCC\r_7"
+      - "162.159.133.85\r"
+      - "🇺🇸 US\r_2"
+      - 科技网络 🇺🇸_9
+      - "US\r_1"
+      - "dnschecker.org\r_1"
+      - 科技网络 🇺🇸_10
       - "科技网络\r_2"
+      - "US\r_2"
+      - 科技网络 🇺🇸_11
+      - 科技网络 🇨🇳_3
+      - "www.ipchicken.com\r_1"
+      - "NL\r_4"
+      - "🇺🇸 US\r_3"
       - "科技网络\r_3"
+      - "KR\r_1"
+      - 科技网络 🇨🇳_4
+      - "🇺🇸 US\r_4"
+      - "dnschecker.org\r_2"
+      - "CA\r"
+      - "🇺🇸 US\r_5"
+      - "CT\r_2"
+      - "US\r_3"
+      - "CMCC\r_8"
+      - "科技网络 🇨🇳\r"
+      - 科技网络 🇨🇳_5
+      - "www.hugedomains.com\r"
+      - "KR\r_2"
+      - 科技网络 🇺🇸_12
+      - "US\r_4"
+      - "CMCC\r_9"
+      - 科技网络 🇨🇳_6
+      - "comicabc.com\r_1"
+      - "🇭🇰 HK\r_2"
+      - "braden.ns.cloudflare.com\r"
+      - "ipv4.ip.sb\r_1"
+      - "IL\r_1"
+      - "www.ipchicken.com\r_2"
+      - "CT\r_3"
+      - "CMCC\r_10"
+      - "time.is\r"
+      - "CMCC\r_11"
+      - "CMCC\r_12"
+      - 科技网络 🇺🇸_13
+      - "US\r_5"
+      - "CMCC\r_13"
+      - "CMCC\r_14"
+      - "172.67.106.26\r"
+      - "CMCC\r_15"
+      - "CMCC\r_16"
+      - "CT\r_4"
+      - "CMCC\r_17"
+      - "ip.gs\r"
+      - "ipv4.ip.sb\r_2"
+      - "ipv4.ip.sb\r_3"
+      - "CMCC\r_18"
+      - "JP\r_2"
+      - "CT\r_5"
       - "科技网络\r_4"
+      - "JP\r_3"
+      - "comicabc.com\r_2"
+      - 科技网络 🇺🇸_14
+      - "ipv4.ip.sb\r_4"
+      - "IL\r_2"
+      - 科技网络 🇺🇸_15
+      - "CT\r_6"
+      - "JP\r_4"
+      - "CMCC\r_19"
+      - 科技网络 🇨🇳_7
+      - "172.67.79.211\r_1"
+      - "www.udemy.com\r"
+      - 科技网络 🇨🇳_8
+      - "TW\r_1"
+      - "KR\r_3"
+      - "TW\r_2"
+      - "CMCC\r_20"
+      - "172.67.79.211\r_2"
+      - "172.67.79.211\r_3"
       - "科技网络\r_5"
-      - "科技网络\r_6"
-      - "科技网络\r_7"
-      - "科技网络\r_8"
-      - "科技网络\r_9"
-      - "科技网络\r_10"
-      - "科技网络\r_11"
-      - "科技网络\r_12"
-      - "科技网络\r_13"
-      - "科技网络\r_14"
-      - "科技网络\r_15"
-      - "科技网络\r_16"
-      - "科技网络\r_17"
-      - "科技网络\r_18"
-      - "科技网络\r_19"
-      - "科技网络\r_20"
-      - "科技网络\r_21"
-      - "科技网络\r_22"
-      - "科技网络\r_23"
-      - "科技网络\r_24"
-      - "科技网络\r_25"
-      - "科技网络\r_26"
-      - "科技网络\r_27"
-      - "科技网络\r_28"
-      - "科技网络\r_29"
-      - "科技网络\r_30"
-      - "科技网络\r_31"
-      - "科技网络\r_32"
-      - "科技网络\r_33"
-      - "科技网络\r_34"
-      - "科技网络\r_35"
-      - "科技网络\r_36"
-      - "科技网络\r_37"
-      - "科技网络\r_38"
-      - "科技网络\r_39"
-      - "科技网络\r_40"
-      - "科技网络\r_41"
-      - "科技网络\r_42"
-      - "科技网络\r_43"
-      - "科技网络\r_44"
-      - "科技网络\r_45"
-      - "科技网络\r_46"
-      - "科技网络\r_47"
-      - "科技网络\r_48"
-      - "科技网络\r_49"
-      - "科技网络\r_50"
-      - "科技网络\r_51"
-      - "科技网络\r_52"
-      - "科技网络\r_53"
-      - "科技网络\r_54"
-      - "科技网络\r_55"
-      - "科技网络\r_56"
-      - "科技网络\r_57"
-      - "科技网络\r_58"
-      - "科技网络\r_59"
-      - "科技网络\r_60"
-      - "科技网络\r_61"
-      - "科技网络\r_62"
-      - "科技网络\r_63"
-      - "科技网络\r_64"
-      - "科技网络\r_65"
-      - "科技网络\r_66"
-      - "科技网络\r_67"
-      - "科技网络\r_68"
-      - "科技网络\r_69"
-      - "科技网络\r_70"
-      - "科技网络\r_71"
-      - "科技网络\r_72"
-      - "科技网络\r_73"
-      - "科技网络\r_74"
-      - "科技网络\r_75"
-      - "科技网络\r_76"
-      - "科技网络\r_77"
-      - "科技网络\r_78"
-      - "科技网络\r_79"
-      - "科技网络\r_80"
-      - "科技网络\r_81"
-      - "科技网络\r_82"
-      - "科技网络\r_83"
-      - "科技网络\r_84"
-      - "科技网络\r_85"
-      - "科技网络\r_86"
-      - "科技网络\r_87"
-      - "科技网络\r_88"
-      - "科技网络\r_89"
-      - "科技网络\r_90"
-      - "科技网络\r_91"
-      - "科技网络\r_92"
-      - "科技网络\r_93"
-      - "科技网络\r_94"
-      - "科技网络\r_95"
-      - "科技网络\r_96"
-      - "科技网络\r_97"
-      - "科技网络\r_98"
-      - "科技网络\r_99"
-      - "科技网络\r_100"
-      - "科技网络\r_101"
-      - "科技网络\r_102"
-      - "科技网络\r_103"
-      - "科技网络\r_104"
-      - "科技网络\r_105"
-      - "科技网络\r_106"
-      - "科技网络\r_107"
-      - "科技网络\r_108"
-      - "科技网络 🇨🇳\r_8"
-      - "科技网络 🇨🇳\r_9"
-      - "科技网络 🇨🇳\r_10"
-      - 科技网络 🇨🇳_13
-      - "科技网络 🇺🇸\r_13"
-      - "科技网络 🇺🇸\r_14"
-      - "科技网络 🇺🇸\r_15"
-      - "科技网络 🇺🇸\r_16"
-      - "科技网络 🇺🇸\r_17"
-      - "科技网络 🇷🇺\r"
-      - "科技网络 🇫🇷\r_1"
-      - "科技网络 🇫🇷\r_2"
-      - 科技网络 🇨🇳_14
-      - 科技网络 🇨🇳_15
-      - 科技网络
-      - "科技网络\r_109"
-      - "科技网络\r_110"
-      - "科技网络\r_111"
-      - "科技网络\r_112"
-      - "科技网络\r_113"
-      - "科技网络\r_114"
-      - "科技网络\r_115"
-      - "科技网络\r_116"
-      - "科技网络\r_117"
-      - "科技网络\r_118"
-      - "科技网络\r_119"
-      - "科技网络\r_120"
-      - "科技网络\r_121"
-      - "科技网络\r_122"
-      - "科技网络\r_123"
-      - "科技网络\r_124"
-      - "科技网络\r_125"
-      - "科技网络\r_126"
-      - "科技网络\r_127"
-      - 科技网络 🇨🇳_16
+      - "KR\r_4"
+      - "CMCC\r_21"
+      - "JP\r_5"
+      - 科技网络 🇨🇳_9
+      - "dylan.ns.cloudflare.com\r_2"
+      - "iplocation.io\r_2"
+      - "CMCC\r_22"
+      - "🇭🇰 HK\r_3"
+      - "NL\r_5"
+      - "huxley.ns.cloudflare.com\r"
+      - "comicabc.com\r_3"
+      - "BR\r"
+      - "🇭🇰 HK\r_4"
+      - "CMCC\r_23"
+      - "comicabc.com\r_4"
+      - "CMCC\r_24"
+      - "CMCC\r_25"
+      - "CMCC\r_26"
+      - "SG\r_1"
+      - "SG\r_2"
 
 rules:
 # 本地/局域网地址
